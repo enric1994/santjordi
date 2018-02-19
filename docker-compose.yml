@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql
+    restart: always
+    volumes:
+      - ./db:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpass
+      - MYSQL_DATABASE=wadb
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=pass
+
