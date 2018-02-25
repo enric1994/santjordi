@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import time
 from webwhatsapi import WhatsAPIDriver
 from webwhatsapi.objects.message import Message
@@ -7,11 +9,9 @@ print("Waiting for QR")
 driver.wait_for_login()
 
 print("Bot started")
-
+mygroup=driver.get_chat_from_id("34669214506-1519572942@g.us")
 while True:
-    time.sleep(3)
-    print('Checking for more messages')
-    for contact in driver.get_unread():
-        for message in contact.messages:
-	    print message
+    time.sleep(120)
+    mygroup.send_message("hello")
 
+ 
