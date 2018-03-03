@@ -1,3 +1,4 @@
 geckodriver.log
 nohup.out
 .vscode/settings.json
+*.pyc
