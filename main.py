@@ -7,7 +7,7 @@ import handler
 from webwhatsapi import WhatsAPIDriver
 from webwhatsapi.objects.message import Message
 
-offline_mode=False
+offline_mode=True
 
 #Initialize bot
 if not offline_mode: driver = WhatsAPIDriver()
@@ -25,8 +25,9 @@ def check_unread():
         for contact in driver.get_unread():
             for message in reversed(contact.messages):
                 if isinstance(message, Message):
-                    if handler.handle(message.safe_content)!=-1:
-                        contact.chat.send_message(str(handler.handle(message.safe_content)))
+                    response=handler.handle(message.safe_content)
+                    if response!=-1:
+                        contact.chat.send_message(str(response))
                     else:
                         print "No answer"
 
@@ -38,7 +39,7 @@ def les_planes_cron():
     else:print les_planes.message()
     return
 
-#Schedule list
+#####Schedule list
 schedule.every().day.at("14:07").do(les_planes_cron)
 
 #Main loop
