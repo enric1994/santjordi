@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import schedule
-import time
+import time,random
 import les_planes
 import handler
 from webwhatsapi import WhatsAPIDriver
 from webwhatsapi.objects.message import Message
 
-offline_mode=True
+offline_mode=False
 
 #Initialize bot
 if not offline_mode: driver = WhatsAPIDriver()
@@ -27,6 +27,7 @@ def check_unread():
                 if isinstance(message, Message):
                     response=handler.handle(message.safe_content)
                     if response!=-1:
+                        time.sleep(random.randint(3,5))
                         contact.chat.send_message(str(response))
                     else:
                         print "No answer"
@@ -46,7 +47,7 @@ schedule.every().day.at("14:07").do(les_planes_cron)
 #TODO Run message handling and cron in parallel
 while True:
     check_unread()
-    time.sleep(5)
+    time.sleep(random.randint(5,10))
     schedule.run_pending()
 
 
