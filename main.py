@@ -9,6 +9,8 @@ from webwhatsapi.objects.message import Message
 
 offline_mode=False
 
+#Do the tests!!! $python -m unittest discover
+
 #Initialize bot
 if not offline_mode: driver = WhatsAPIDriver()
 print("Waiting for QR")
@@ -18,14 +20,17 @@ print("Bot started")
 #Handle messages
 def check_unread():
     if offline_mode:
+        chat=raw_input("Input chat: ")
+        sender=raw_input("Input sender: ")
         input_message=raw_input("Input message: ")
-        print handler.handle(input_message)
+
+        print handler.handle(chat,sender,input_message)
     else:
         print('Checking for more messages')
         for contact in driver.get_unread():
             for message in reversed(contact.messages):
                 if isinstance(message, Message):
-                    response=handler.handle(message.safe_content)
+                    response=handler.handle(contact.chat.id,message.sender.id,message.safe_content)
                     if response!=-1:
                         time.sleep(random.randint(3,5))
                         contact.chat.send_message(str(response))
