@@ -32,3 +32,10 @@ def organize(chat,sender,message):
 
 #insert japo(name,first,second,third) values ("enric",5,2,1)
 
+def parse(input):
+    input=input.split(" ")
+    input=list(filter(None,input))
+    if len(input)==3:
+        return input
+    else:
+        return -1
