@@ -86,7 +86,7 @@ def organize(chat,sender,message):
                         menu[field_count-3][int(field)]+=1
                         field_count+=1
                 output=("Hi han *"+str(len(result))+"* persones confirmades. "+
-                "Els plats demanats son: Primer plat *{"+str(menu[0])[4:-1]+
+                "Els plats demanats son: primer plat *{"+str(menu[0])[4:-1]+
                 "}*, segon plat *{"+str(menu[1])[4:-1]+
                 "}*, tercer plat *{"+str(menu[2])[4:-1]+"}*")
                 return output
