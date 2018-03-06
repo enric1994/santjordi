@@ -2,14 +2,21 @@
 # -*- coding: utf-8 -*-
 import schedule
 import time,random
+<<<<<<< HEAD
 from cron_tasks import les_planes
+=======
+import les_planes
+>>>>>>> a86bb1d2b013a17b02d18ebd52f24e5bb4258237
 import handler
 from webwhatsapi import WhatsAPIDriver
 from webwhatsapi.objects.message import Message
 
+<<<<<<< HEAD
 #Unicode trick to display in command line
 #uni = unicode(u'😂').encode('utf8')
 #print(uni)
+=======
+>>>>>>> a86bb1d2b013a17b02d18ebd52f24e5bb4258237
 offline_mode=False
 
 #Do the tests!!! $python -m unittest discover

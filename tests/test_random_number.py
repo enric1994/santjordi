@@ -1,7 +1,11 @@
 import unittest
 import sys
 
+<<<<<<< HEAD
 sys.path.append('../apps')
+=======
+sys.path.append('../')
+>>>>>>> a86bb1d2b013a17b02d18ebd52f24e5bb4258237
 import random_number
 class TestRandomNumber(unittest.TestCase):
 
