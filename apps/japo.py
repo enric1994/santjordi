@@ -4,11 +4,11 @@ import db
 
 def organize(chat,sender,message):
     #try:
-    if chat=="1":#  34669214506-1520096942@g.us":
+    if chat=="34669214506-1520096942@g.us":
         
         #START
         if parse_instruction(message)=="start":
-            if sender=="1":#  34669214506@c.us":
+            if sender=="34669214506@c.us":
                 if not db.exists("japo"):
                     db.post_query("create table japo"+ 
                     "(name varchar (30), "+
@@ -23,7 +23,7 @@ def organize(chat,sender,message):
                 return x#[len(x.encode('utf-8').split(" ")) for x in result_df['_text']]
         #CANCEL
         elif parse_instruction(message)=="cancel":
-            if sender=="1":#  34669214506@c.us":
+            if sender=="34669214506@c.us":
                 if db.exists:
                     db.post_query("drop table japo;")
                     return "El japo queda cancelat :("
@@ -76,7 +76,7 @@ def organize(chat,sender,message):
 
         #CHECK
         elif parse_instruction(message)=="check":
-            if sender=="1":#  34669214506@c.us":
+            if sender=="34669214506@c.us":
                 result=db.get_query("SELECT * FROM japo")
                 menu = [[0 for x in range(6)] for y in range(3)]               
                 #count first
@@ -98,6 +98,8 @@ def organize(chat,sender,message):
         else:
             return ("Les instruccions que podeu fer són ##japo add *nom plat1 plat2 plat3*"+
             " per afegir un plat o bé ##japo update *plat1 plat2 plat3* per modificar el vostre menu")
+    else:
+        return -1
     # except:
     #     return -1
 

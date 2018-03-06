@@ -7,7 +7,10 @@ import handler
 from webwhatsapi import WhatsAPIDriver
 from webwhatsapi.objects.message import Message
 
-offline_mode=True
+#Unicode trick to display in command line
+#uni = unicode(u'😂').encode('utf8')
+#print(uni)
+offline_mode=False
 
 #Do the tests!!! $python -m unittest discover
 
