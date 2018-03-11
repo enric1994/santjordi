@@ -27,7 +27,7 @@ def check_unread():
         sender=raw_input("Input sender: ")
         input_message=raw_input("Input message: ")
 
-        print handler.handle(chat,sender,input_message)
+        print(handler.handle(chat,sender,input_message))
     else:
         print('Checking for more messages')
         for contact in driver.get_unread():
@@ -45,7 +45,7 @@ def check_unread():
 def les_planes_cron():
     if not offline_mode: mygroup=driver.get_chat_from_id("34669214506-1519572942@g.us")
     if not offline_mode: mygroup.send_message(les_planes.message())
-    else:print les_planes.message()
+    else:print(les_planes.message())
     return
 
 #####Schedule list
