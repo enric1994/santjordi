@@ -37,7 +37,7 @@ def organize(chat,sender,message):
                 if db.exists("japo"):
                     order=parse_order(message)
                     if order==-1:
-                        return "👨‍🍳Instrucció incorrecte, escriu ##japo help per obtenir ajuda"
+                        return "👨‍🍳Instrucció incorrecte, escriu *##japo help* per obtenir ajuda"
                     if count_field_in_db("sender",sender):
                         return "👨‍🍳Nomes pots demanar un cop! 😳"
                     if count_field_in_db("name",order[1]):
@@ -61,7 +61,7 @@ def organize(chat,sender,message):
                 if db.exists("japo"):
                     order=parse_update_order(message)
                     if order==-1:
-                        return "👨‍🍳Instrucció incorrecte, escriu ##japo help per obtenir ajuda"
+                        return "👨‍🍳Instrucció incorrecte, escriu *##japo help* per obtenir ajuda"
                     if not count_field_in_db("sender",sender):
                         return "👨‍🍳No pots modificar el menu si encara no has demanat res 🤔"
                                 
@@ -101,12 +101,13 @@ def organize(chat,sender,message):
                 else:
                     return "👨‍🍳Això només ho pot fer l'Albert 😌"
             elif parse_instruction(message)=="help":
-                return ("👨‍🍳Les instruccions que podeu fer són ##japo add *nom plat1 plat2 plat3*"+
-                " per afegir un plat o bé ##japo update *plat1 plat2 plat3* per modificar el vostre menu")
+                return """👨‍🍳Les instruccions disponibles són:
+                ##japo add *nom plat1 plat2 plat3* 
+                ##japo update *plat1 plat2 plat3*")"""
             else:
-                return """👨‍🍳Les instruccions que podeu fer són:
-                ##japo add *nom plat1 plat2 plat3* per afegir un plat
-                ##japo update *plat1 plat2 plat3* per modificar el vostre menu")"""
+                return """👨‍🍳Les instruccions disponibles són:
+                ##japo add *nom plat1 plat2 plat3* 
+                ##japo update *plat1 plat2 plat3*")"""
         else:
             return -1
     except:
