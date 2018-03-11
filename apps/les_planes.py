@@ -11,7 +11,7 @@ def message():
     tasks=("Avui al jove Marc li toca fer la cuina","Avui la cuina li toca a l'Uri","Avui la cuina la farà l'Enric","Avui al David li toca fer la cuina","Avui l'Eric hauria de treure la rentaplats i posar tot el que estigui fora","Avui estaria bé rifar qui posa la rentaplats","Avui el jove Eric te la missió de baixar 3 bosses de basura")
     today_task=tasks[week_day]
 
-    string= """Bon dia NAIS, es presenta una nou dia a la republica de les Planes
+    string= """🐔Bon dia NAIS, es presenta una nou dia a la republica de les Planes
     Avui el Bitcoin esta a """+btc+"""$ i estem a una temperatura de: """+str(temp)+"\n"
     string=string+today_task
     return string

@@ -3,7 +3,7 @@
 import schedule
 import time,random
 from cron_tasks import les_planes
-import handler
+import handler,db
 from webwhatsapi import WhatsAPIDriver
 from webwhatsapi.objects.message import Message
 
@@ -46,13 +46,18 @@ def check_unread():
 #####Cron functions
 
 def les_planes_cron():
-    if not offline_mode: mygroup=driver.get_chat_from_id("34669214506-1519572942@g.us")
-    if not offline_mode: mygroup.send_message(les_planes.message())
-    else:print(les_planes.message())
+    mygroup=driver.get_chat_from_id("34669214506-1519572942@g.us")
+    mygroup.send_message(les_planes.message())
+    print(les_planes.message())
     return
-
+def japo_cron():
+    if db.exists("japo"):
+        db.post_query("drop table japo;")
+        print("japo db deleted")
+    return
 #####Schedule list
-schedule.every().day.at("14:07").do(les_planes_cron)
+schedule.every().day.at("07:00").do(les_planes_cron)
+schedule.every().day.at("23:00").do(japo_cron)
 
 #Main loop
 #TODO Run message handling and cron in parallel
