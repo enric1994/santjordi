@@ -3,3 +3,4 @@ nohup.out
 .vscode/settings.json
 *.pyc
 db/
+__pycache__/

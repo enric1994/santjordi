@@ -3,7 +3,7 @@ version: '3.1'
 services:
 
   db:
-    image: hypriot/rpi-mysql
+    image: mysql
     restart: always
     volumes:
       - ./db:/var/lib/mysql

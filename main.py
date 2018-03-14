@@ -15,7 +15,7 @@ offline_mode=False
 #Do the tests!!! $python -m unittest discover
 
 #Initialize bot
-if not offline_mode: driver = WhatsAPIDriver()
+if not offline_mode: driver = WhatsAPIDriver(username="enric")
 print("Waiting for QR")
 if not offline_mode: driver.wait_for_login()
 
