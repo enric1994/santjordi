@@ -8,7 +8,7 @@ def organize(chat,sender,message):
             
             #START
             if parse_instruction(message)=="start":
-                if sender=="34669214506@c.us" or sender=="1":
+                if sender=="34669214506@c.us" or sender=="34650612142@c.us" or sender=="1":
                     if not db.exists("japo"):
                         db.post_query("create table japo"+ 
                         "(name varchar (30), "+
@@ -23,7 +23,7 @@ def organize(chat,sender,message):
                     return x#[len(x.encode('utf-8').split(" ")) for x in result_df['_text']]
             #CANCEL
             elif parse_instruction(message)=="cancel":
-                if sender=="34669214506@c.us" or sender=="1":
+                if sender=="34669214506@c.us" or sender=="34650612142@c.us" or sender=="1":
                     if db.exists("japo"):
                         db.post_query("drop table japo;")
                         return "👨‍🍳El japo queda cancelat ☹️"
@@ -81,7 +81,7 @@ def organize(chat,sender,message):
 
             #CHECK
             elif parse_instruction(message)=="check":
-                if sender=="34669214506@c.us" or sender=="1":
+                if sender=="34669214506@c.us" or sender=="34650612142@c.us" or sender=="1":
                     if db.exists("japo"):
                         result=db.get_query("SELECT * FROM japo")
                         menu = [[0 for x in range(6)] for y in range(3)]               
@@ -111,7 +111,7 @@ def organize(chat,sender,message):
         else:
             return -1
     except:
-        return "👨‍🍳Casi cola 😙"
+        return -1
 
 def parse_instruction(input):
     input=input.split(" ")
@@ -125,6 +125,10 @@ def parse_instruction(input):
 def parse_order(input):
     input=input.split(" ")
     input=list(filter(None,input))
+    for x in input[2:]:
+        print(input[2:])
+        if int(x)<1 or int(x)>6:
+            return -1
     if len(input)==5:
         return input
     else:
@@ -132,6 +136,10 @@ def parse_order(input):
 def parse_update_order(input):
     input=input.split(" ")
     input=list(filter(None,input))
+    for x in input[2:]:
+        print(x)
+        if int(x)<1 or int(x)>6:
+            return -1
     if len(input)==4:
         return input
     else:

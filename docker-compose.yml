@@ -16,6 +16,8 @@ services:
       - MYSQL_USER=user
       - MYSQL_PASSWORD=pass
 
+#docker exec -it wabot_db_1 mysql -u user -p
+#use wadb;
 
 #ALTER TABLE japo CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_bin
 #ALTER TABLE japo CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
