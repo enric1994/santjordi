@@ -127,7 +127,7 @@ def parse_order(input):
     input=list(filter(None,input))
     for x in input[2:]:
         print(input[2:])
-        if int(x)<1 or int(x)>6:
+        if int(x)<1 or int(x)>5:
             return -1
     if len(input)==5:
         return input
@@ -138,7 +138,7 @@ def parse_update_order(input):
     input=list(filter(None,input))
     for x in input[2:]:
         print(x)
-        if int(x)<1 or int(x)>6:
+        if int(x)<1 or int(x)>5:
             return -1
     if len(input)==4:
         return input
