@@ -46,14 +46,13 @@ def check_unread():
 #####Cron functions
 
 def les_planes_cron():
-    mygroup=driver.get_chat_from_id("34669214506-1519572942@g.us")
+    mygroup=driver.get_chat_from_id("34607587563-1505139567@g.us")
     mygroup.send_message(les_planes.message())
-    print(les_planes.message())
+    time.sleep(60)
     return
 def japo_cron():
     if db.exists("japo"):
         db.post_query("drop table japo;")
-        print("japo db deleted")
     return
 #####Schedule list
 schedule.every().day.at("07:00").do(les_planes_cron)

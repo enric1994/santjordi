@@ -14,8 +14,8 @@ def message():
     today_task=tasks[week_day]
 
     string= """🐔Bon dia nais, es presenta una nou dia a la republica de les Planes
-    💰El Bitcoin esta a """+btc+"""$
-    ⛅️Estem a una temperatura de: """+str(temp)[:5]+"\n"
+    💰El Bitcoin esta a *"""+btc+"""*$
+    ⛅️Estem a una temperatura de: *"""+str(temp)[:5]+"*\n"
     string=string+"""
     👨🏿"""+today_task
     return string
