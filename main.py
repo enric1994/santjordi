@@ -25,9 +25,11 @@ print("Bot started")
 #Handle messages
 def check_unread():
     if offline_mode:
-        chat=input("Input chat: ")
-        sender=input("Input sender: ")
+        chat=1#input("Input chat: ")
+        sender=1#input("Input sender: ")
         input_message=input("Input message: ")
+        if input_message=="-1":
+            exit()
 
         print(handler.handle(chat,sender,input_message))
     else:
@@ -61,11 +63,16 @@ schedule.every().day.at("23:00").do(japo_cron)
 #Main loop
 #TODO Run message handling and cron in parallel
 while True:
-    try:
+    if offline_mode:
         check_unread()
         if not offline_mode: time.sleep(random.randint(5,10))
         schedule.run_pending()
-    except:
-        print("ERROR")
 
+    elif not offline_mode:
+        try:
+            check_unread()
+            if not offline_mode: time.sleep(random.randint(5,10))
+            schedule.run_pending()
+        except:
+            print("ERROR")
  

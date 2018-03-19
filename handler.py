@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from apps import random_number
 from apps import japo
+from apps import puigdebot
 def handle(chat,sender,message):
     #Random number
     if message[:8]=="##random":
@@ -10,8 +11,9 @@ def handle(chat,sender,message):
     if message[:6]=="##japo":
         return japo.organize(chat,sender,message[6:])
 
-    else:
-        return -1
+    #Puigdebot
+    if message[0]=="#":
+    	return puigdebot.play(message[1:])
 
 #34669214506-1520096942@g.us
 #34669214506@c.us
