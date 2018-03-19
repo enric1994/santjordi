@@ -84,7 +84,7 @@ def organize(chat,sender,message):
                 if sender=="34669214506@c.us" or sender=="34650612142@c.us" or sender=="1":
                     if db.exists("japo"):
                         result=db.get_query("SELECT * FROM japo")
-                        menu = [[0 for x in range(6)] for y in range(3)]               
+                        menu = [[0 for x in range(8)] for y in range(3)]               
                         #count first
                         for order in result:
                             field_count=0
@@ -126,8 +126,7 @@ def parse_order(input):
     input=input.split(" ")
     input=list(filter(None,input))
     for x in input[2:]:
-        print(input[2:])
-        if int(x)<1 or int(x)>5:
+        if int(x)<1 or int(x)>7:
             return -1
     if len(input)==5:
         return input
@@ -137,8 +136,7 @@ def parse_update_order(input):
     input=input.split(" ")
     input=list(filter(None,input))
     for x in input[2:]:
-        print(x)
-        if int(x)<1 or int(x)>5:
+        if int(x)<1 or int(x)>7:
             return -1
     if len(input)==4:
         return input
