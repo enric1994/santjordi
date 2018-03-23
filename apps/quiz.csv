@@ -1,194 +1,192 @@
-1;Rússia;17.075.200
-2;Canadà;9.976.140
-3;Estats Units;9.629.091
-4;República Popular de la Xina (només la Xina continental);9.596.960
-5;Brasil;8.514.876
-6;Austràlia;7.686.850
--;Unió Europea;4.324.782
-7;Índia;3.287.590
-8;Argentina;2.766.890
-9;Kazakhstan;2.727.300
-10;Sudan + Sudan del Sud;2.505.810
-11;Algèria;2.381.740
-12;República Democràtica del Congo;2.345.410
-13;Aràbia Saudita;2.218.000
-14;Mèxic;1.972.550
-15;Indonèsia;1.904.556
-16;Líbia;1.759.540
-17;Iran;1.648.000
-18;Mongòlia;1.565.000
-19;Perú;1.285.220
-20;Txad;1.284.000
-21;Níger;1.267.000
-22;Angola;1.246.700
-23;Mali;1.240.000
-24;Sud-àfrica;1.219.912
-25;Colòmbia;1.138.910
-26;Etiòpia;1.127.127
-27;Bolívia;1.098.580
-28;Mauritània;1.030.700
-29;Egipte;1.001.450
-30;Tanzània;948.087
-31;Nigèria;923.768
-32;Veneçuela;912.05
-33;Namíbia;825.418
-34;Pakistan;803.94
-35;Moçambic;801.59
-36;Turquia;780.58
-37;Xile;756.95
-38;Zàmbia;752.614
-39;Myanmar;678.5
-40;França -- (França metropolitana);547.03
-41;Afganistan;647.5
-42;Somàlia;637.657
-43;República Centreafricana;622.984
-44;Ucraïna;603.7
-45;Botswana;600.37
-46;Madagascar;587.04
-47;Kenya;582.65
-48;Iemen;527.97
-49;Tailàndia;514
-50;Espanya;505.956
-51;Turkmenistan;488.1
-52;Camerun;475.44
-53;Papua Nova Guinea;462.84
-54;Suècia;449.964
-55;Uzbekistan;447.4
-56;Marroc;446.55
-57;Iraq;437.072
-58;Paraguai;406.75
-59;Zimbabwe;390.58
-60;Noruega;324.22
-61;Japó;377.835
-62;Alemanya;357.021
-63;República del Congo;342
-64;Finlàndia;337.03
-65;Malàisia;329.75
-66;Vietnam;329.56
-67;Costa d'Ivori;322.46
-68;Polònia;312.685
-69;Oman;309.5
-70;Itàlia;301.23
-71;Filipines;300
-72;Equador;283.56
-73;Burkina Faso;274.2
-74;Nova Zelanda;268.68
-75;Gabon;267.667
-76;Guinea;245.857
-77;Regne Unit;244.82
-78;Ghana;238.54
-79;Romania;237.5
-80;Laos;236.8
-81;Uganda;236.04
-82;Guyana;214.97
-83;Bielorússia;207.6
-84;Kirguizistan;198.5
-85;Senegal;196.19
-86;Síria;185.18
-87;Cambodja;181.04
-88;Uruguai;176.22
-89;Tunísia;163.61
-90;Surinam;163.27
-91;Bangla Desh;144
-92;Tadjikistan;143.1
-93;Nepal;140.8
-94;Grècia;131.94
-95;Nicaragua;129.494
-96;Eritrea;121.32
-97;Corea del Nord;120.54
-98;Malawi;118.48
-99;Benín;112.62
-100;Hondures;112.09
-101;Libèria;111.37
-102;Bulgària;110.91
-103;Guatemala;108.89
-104;Islàndia;103
-105;Sèrbia i Montenegro;102.173
-106;Cuba;100.86
-107;Corea del Sud;98.48
-108;Hongria;93.03
-109;Portugal;88.941
-110;Jordània;92.3
-111;Azerbaidjan;86.6
-112;Àustria;83.858
-113;Emirats Àrabs Units;82.88
-114;República Txeca;78.866
-115;Panamà;78.2
-116;Sierra Leone;71.74
-117;República d'Irlanda;70.273
-118;Geòrgia;69.7
-119;Sri Lanka;65.61
-120;Lituània;65.2
-121;Letònia;64.589
-122;Togo;56.785
-123;Croàcia;56.542
-124;Bòsnia i Hercegovina;51.129
-125;Costa Rica;51.1
-126;Eslovàquia;48.845
-127;República Dominicana;48.73
-128;Bhutan;47
-129;Estònia;45.226
-130;Dinamarca;43.094
-131;| Països Baixos;41.526
-132;Suïssa;41.29
-133;Guinea Bissau;36.12
-134;República de la Xina (Taiwan, Quemoy, Matsu);35.98
-135;Moldàvia;33.843
-136;Bèlgica;30.528
-137;Lesotho;30.355
-138;Armènia;29.8
-139;Albània;28.748
-140;Salomó;28.45
-141;Guinea Equatorial;28.051
-142;Burundi;27.83
-143;Haití;27.75
-144;Rwanda;26.338
-145;Macedònia;25.333
-146;Belize;22.966
-147;Djibouti;22
-148;El Salvador;21.04
-149;Israel;20.77
-150;Eslovènia;20.253
-151;Fiji;18.27
-152;Kuwait;17.82
-153;Swazilàndia;17.363
-154;Timor Oriental;14.874
-155;Bahames;13.94
-156;Vanuatu;12.2
-157;Qatar;11.437
-158;Gàmbia;11.3
-159;Jamaica;10.99
-160;Líban;10.452
-161;Xipre;9.25
-162;Brunei;5.77
-163;Trinitat i Tobago;5.128
-164;Cap Verd;4.033
-165;Samoa Occidental;2.86
-166;Luxemburg;2.586
-167;Comores;2.17
-168;Maurici;1.86
-169;São Tomé i Príncipe;1.001
-170;Dominica;754
-171;Tonga;748
-172;Kiribati;717
-173;Singapur;707,1
-174;Estats Federats de Micronèsia;702
-175;Bahrain;665
-176;Saint Lucia;620
-177;Seychelles;455
-178;Andorra;468
-179;Palau;458
-180;Antigua i Barbuda;442
-181;Barbados;430
-182;Saint Vincent i les Grenadines;389
-183;Grenada;340
-184;Malta;316
-185;Maldives;300
-186;Saint Kitts i Nevis;261
-187;Illes Marshall;181
-188;Liechtenstein;160
-189;San Marino;61,2
-190;Tuvalu;26
-191;Nauru;21
-192;Mònaco;1,95
-193;Ciutat del Vaticà;0,44
+1,Rússia,17.075.200,més de 10.000.000 km quadrats,144526636,eruropa/asia,8.4/km2 ,Lat 55,té mar,es condueix per la dreta
+2,Canadà,9.976.140,més de 5.000.000 km quadrats,35151728,amèrica del nord,3.92/km2,Lat 45,té mar,es condueix per la dreta
+3,Estats Units,9.629.091,més de 5.000.000 km quadrats,325719178,amèrica del nord,32.8/km2,38,té mar,es condueix per la dreta
+4,Xina,9.596.960,més de 5.000.000 km quadrats,1403500365,Àsia,145/km2,39,té mar,es condueix per la dreta
+5,Brasil,8.514.876,més de 5.000.000 km quadrats,,,,,,
+6,Austràlia,7.686.850,més de 5.000.000 km quadrats,,,,,,
+7,Índia,3.287.590,més de 1.000.000 km quadrats,,,,,,
+8,Argentina,2.766.890,més de 1.000.000 km quadrats,,,,,,
+9,Kazakhstan,2.727.300,més de 1.000.000 km quadrats,,,,,,
+10,Sudan + Sudan del Sud,2.505.810,més de 1.000.000 km quadrats,,,,,,
+11,Algèria,2.381.740,més de 1.000.000 km quadrats,,,,,,
+12,República Democràtica del Congo,2.345.410,més de 1.000.000 km quadrats,,,,,,
+13,Aràbia Saudita,2.218.000,més de 1.000.000 km quadrats,,,,,,
+14,Mèxic,1.972.550,més de 1.000.000 km quadrats,,,,,,
+15,Indonèsia,1.904.556,més de 1.000.000 km quadrats,,,,,,
+16,Líbia,1.759.540,més de 1.000.000 km quadrats,,,,,,
+17,Iran,1.648.000,més de 1.000.000 km quadrats,,,,,,
+18,Mongòlia,1.565.000,més de 1.000.000 km quadrats,,,,,,
+19,Perú,1.285.220,més de 1.000.000 km quadrats,,,,,,
+20,Txad,1.284.000,més de 1.000.000 km quadrats,,,,,,
+21,Níger,1.267.000,més de 1.000.000 km quadrats,,,,,,
+22,Angola,1.246.700,més de 1.000.000 km quadrats,,,,,,
+23,Mali,1.240.000,més de 1.000.000 km quadrats,,,,,,
+24,Sud-àfrica,1.219.912,més de 1.000.000 km quadrats,,,,,,
+25,Colòmbia,1.138.910,més de 1.000.000 km quadrats,,,,,,
+26,Etiòpia,1.127.127,més de 1.000.000 km quadrats,,,,,,
+27,Bolívia,1.098.580,més de 1.000.000 km quadrats,,,,,,
+28,Mauritània,1.030.700,més de 1.000.000 km quadrats,,,,,,
+29,Egipte,1.001.450,més de 1.000.000 km quadrats,,,,,,
+30,Tanzània,948.087,menys de 1.000.000 km quadrats,,,,,,
+31,Nigèria,923.768,menys de 1.000.000 km quadrats,,,,,,
+32,Veneçuela,912.05,menys de 1.000.000 km quadrats,,,,,,
+33,Namíbia,825.418,menys de 1.000.000 km quadrats,,,,,,
+34,Pakistan,803.94,menys de 1.000.000 km quadrats,,,,,,
+35,Moçambic,801.59,menys de 1.000.000 km quadrats,,,,,,
+36,Turquia,780.58,menys de 1.000.000 km quadrats,,,,,,
+37,Xile,756.95,menys de 1.000.000 km quadrats,,,,,,
+38,Zàmbia,752.614,menys de 1.000.000 km quadrats,,,,,,
+39,Myanmar,678.5,menys de 1.000.000 km quadrats,,,,,,
+40,França -- (França metropolitana),547.03,menys de 1.000.000 km quadrats,,,,,,
+41,Afganistan,647.5,menys de 1.000.000 km quadrats,,,,,,
+42,Somàlia,637.657,menys de 1.000.000 km quadrats,,,,,,
+43,República Centreafricana,622.984,menys de 1.000.000 km quadrats,,,,,,
+44,Ucraïna,603.7,menys de 1.000.000 km quadrats,,,,,,
+45,Botswana,600.37,menys de 1.000.000 km quadrats,,,,,,
+46,Madagascar,587.04,menys de 1.000.000 km quadrats,,,,,,
+47,Kenya,582.65,menys de 1.000.000 km quadrats,,,,,,
+48,Iemen,527.97,menys de 1.000.000 km quadrats,,,,,,
+49,Tailàndia,514,menys de 1.000.000 km quadrats,,,,,,
+50,Espanya,505.956,menys de 1.000.000 km quadrats,,,,,,
+51,Turkmenistan,488.1,menys de 500.000 km quadrats,,,,,,
+52,Camerun,475.44,menys de 500.000 km quadrats,,,,,,
+53,Papua Nova Guinea,462.84,menys de 500.000 km quadrats,,,,,,
+54,Suècia,449.964,menys de 500.000 km quadrats,,,,,,
+55,Uzbekistan,447.4,menys de 500.000 km quadrats,,,,,,
+56,Marroc,446.55,menys de 500.000 km quadrats,,,,,,
+57,Iraq,437.072,menys de 500.000 km quadrats,,,,,,
+58,Paraguai,406.75,menys de 500.000 km quadrats,,,,,,
+59,Zimbabwe,390.58,menys de 500.000 km quadrats,,,,,,
+60,Noruega,324.22,menys de 500.000 km quadrats,,,,,,
+61,Japó,377.835,menys de 500.000 km quadrats,,,,,,
+62,Alemanya,357.021,menys de 500.000 km quadrats,,,,,,
+63,República del Congo,342,menys de 500.000 km quadrats,,,,,,
+64,Finlàndia,337.03,menys de 500.000 km quadrats,,,,,,
+65,Malàisia,329.75,menys de 500.000 km quadrats,,,,,,
+66,Vietnam,329.56,menys de 500.000 km quadrats,,,,,,
+67,Costa d'Ivori,322.46,menys de 500.000 km quadrats,,,,,,
+68,Polònia,312.685,menys de 500.000 km quadrats,,,,,,
+69,Oman,309.5,menys de 500.000 km quadrats,,,,,,
+70,Itàlia,301.23,menys de 500.000 km quadrats,,,,,,
+71,Filipines,300,menys de 500.000 km quadrats,,,,,,
+72,Equador,283.56,menys de 500.000 km quadrats,,,,,,
+73,Burkina Faso,274.2,menys de 500.000 km quadrats,,,,,,
+74,Nova Zelanda,268.68,menys de 500.000 km quadrats,,,,,,
+75,Gabon,267.667,menys de 500.000 km quadrats,,,,,,
+76,Guinea,245.857,menys de 250.000 km quadrats,,,,,,
+77,Regne Unit,244.82,menys de 250.000 km quadrats,,,,,,
+78,Ghana,238.54,menys de 250.000 km quadrats,,,,,,
+79,Romania,237.5,menys de 250.000 km quadrats,,,,,,
+80,Laos,236.8,menys de 250.000 km quadrats,,,,,,
+81,Uganda,236.04,menys de 250.000 km quadrats,,,,,,
+82,Guyana,214.97,menys de 250.000 km quadrats,,,,,,
+83,Bielorússia,207.6,menys de 250.000 km quadrats,,,,,,
+84,Kirguizistan,198.5,menys de 250.000 km quadrats,,,,,,
+85,Senegal,196.19,menys de 250.000 km quadrats,,,,,,
+86,Síria,185.18,menys de 250.000 km quadrats,,,,,,
+87,Cambodja,181.04,menys de 250.000 km quadrats,,,,,,
+88,Uruguai,176.22,menys de 250.000 km quadrats,,,,,,
+89,Tunísia,163.61,menys de 250.000 km quadrats,,,,,,
+90,Surinam,163.27,menys de 250.000 km quadrats,,,,,,
+91,Bangla Desh,144,menys de 250.000 km quadrats,,,,,,
+92,Tadjikistan,143.1,menys de 250.000 km quadrats,,,,,,
+93,Nepal,140.8,menys de 250.000 km quadrats,,,,,,
+94,Grècia,131.94,menys de 250.000 km quadrats,,,,,,
+95,Nicaragua,129.494,menys de 250.000 km quadrats,,,,,,
+96,Eritrea,121.32,menys de 250.000 km quadrats,,,,,,
+97,Corea del Nord,120.54,menys de 250.000 km quadrats,,,,,,
+98,Malawi,118.48,menys de 250.000 km quadrats,,,,,,
+99,Benín,112.62,menys de 250.000 km quadrats,,,,,,
+100,Hondures,112.09,menys de 250.000 km quadrats,,,,,,
+101,Libèria,111.37,menys de 250.000 km quadrats,,,,,,
+102,Bulgària,110.91,menys de 250.000 km quadrats,,,,,,
+103,Guatemala,108.89,menys de 250.000 km quadrats,,,,,,
+104,Islàndia,103,menys de 250.000 km quadrats,,,,,,
+105,Sèrbia i Montenegro,102.173,menys de 250.000 km quadrats,,,,,,
+106,Cuba,100.86,menys de 250.000 km quadrats,,,,,,
+107,Corea del Sud,98.48,menys de 100.000 km quadrats,,,,,,
+108,Hongria,93.03,menys de 100.000 km quadrats,,,,,,
+109,Portugal,88.941,menys de 100.000 km quadrats,,,,,,
+110,Jordània,92.3,menys de 100.000 km quadrats,,,,,,
+111,Azerbaidjan,86.6,menys de 100.000 km quadrats,,,,,,
+112,Àustria,83.858,menys de 100.000 km quadrats,,,,,,
+113,Emirats Àrabs Units,82.88,menys de 100.000 km quadrats,,,,,,
+114,República Txeca,78.866,menys de 100.000 km quadrats,,,,,,
+115,Panamà,78.2,menys de 100.000 km quadrats,,,,,,
+116,Sierra Leone,71.74,menys de 100.000 km quadrats,,,,,,
+117,República d'Irlanda,70.273,menys de 100.000 km quadrats,,,,,,
+118,Geòrgia,69.7,menys de 100.000 km quadrats,,,,,,
+119,Sri Lanka,65.61,menys de 100.000 km quadrats,,,,,,
+120,Lituània,65.2,menys de 100.000 km quadrats,,,,,,
+121,Letònia,64.589,menys de 100.000 km quadrats,,,,,,
+122,Togo,56.785,menys de 100.000 km quadrats,,,,,,
+123,Croàcia,56.542,menys de 100.000 km quadrats,,,,,,
+124,Bòsnia i Hercegovina,51.129,menys de 100.000 km quadrats,,,,,,
+125,Costa Rica,51.1,menys de 100.000 km quadrats,,,,,,
+126,Eslovàquia,48.845,menys de 50.000 km quadrats,,,,,,
+127,República Dominicana,48.73,menys de 50.000 km quadrats,,,,,,
+128,Bhutan,47,menys de 50.000 km quadrats,,,,,,
+129,Estònia,45.226,menys de 50.000 km quadrats,,,,,,
+130,Dinamarca,43.094,menys de 50.000 km quadrats,,,,,,
+131,| Països Baixos,41.526,menys de 50.000 km quadrats,,,,,,
+132,Suïssa,41.29,menys de 50.000 km quadrats,,,,,,
+133,Guinea Bissau,36.12,menys de 50.000 km quadrats,,,,,,
+135,Moldàvia,33.843,menys de 50.000 km quadrats,,,,,,
+136,Bèlgica,30.528,menys de 50.000 km quadrats,,,,,,
+137,Lesotho,30.355,menys de 50.000 km quadrats,,,,,,
+138,Armènia,29.8,menys de 50.000 km quadrats,,,,,,
+139,Albània,28.748,menys de 50.000 km quadrats,,,,,,
+140,Salomó,28.45,menys de 50.000 km quadrats,,,,,,
+141,Guinea Equatorial,28.051,menys de 50.000 km quadrats,,,,,,
+142,Burundi,27.83,menys de 50.000 km quadrats,,,,,,
+143,Haití,27.75,menys de 50.000 km quadrats,,,,,,
+144,Rwanda,26.338,menys de 50.000 km quadrats,,,,,,
+145,Macedònia,25.333,menys de 50.000 km quadrats,,,,,,
+146,Belize,22.966,menys de 25.000 km quadrats,,,,,,
+147,Djibouti,22,menys de 25.000 km quadrats,,,,,,
+148,El Salvador,21.04,menys de 25.000 km quadrats,,,,,,
+149,Israel,20.77,menys de 25.000 km quadrats,,,,,,
+150,Eslovènia,20.253,menys de 25.000 km quadrats,,,,,,
+151,Fiji,18.27,menys de 25.000 km quadrats,,,,,,
+152,Kuwait,17.82,menys de 25.000 km quadrats,,,,,,
+153,Swazilàndia,17.363,menys de 25.000 km quadrats,,,,,,
+154,Timor Oriental,14.874,menys de 25.000 km quadrats,,,,,,
+155,Bahames,13.94,menys de 25.000 km quadrats,,,,,,
+156,Vanuatu,12.2,menys de 25.000 km quadrats,,,,,,
+157,Qatar,11.437,menys de 25.000 km quadrats,,,,,,
+158,Gàmbia,11.3,menys de 25.000 km quadrats,,,,,,
+159,Jamaica,10.99,menys de 25.000 km quadrats,,,,,,
+160,Líban,10.452,menys de 25.000 km quadrats,,,,,,
+161,Xipre,9.25,menys de 25.000 km quadrats,,,,,,
+162,Brunei,5.77,menys de 25.000 km quadrats,,,,,,
+163,Trinitat i Tobago,5.128,menys de 25.000 km quadrats,,,,,,
+164,Cap Verd,4.033,menys de 25.000 km quadrats,,,,,,
+165,Samoa Occidental,2.86,menys de 25.000 km quadrats,,,,,,
+166,Luxemburg,2.586,menys de 25.000 km quadrats,,,,,,
+167,Comores,2.17,menys de 25.000 km quadrats,,,,,,
+168,Maurici,1.86,menys de 25.000 km quadrats,,,,,,
+169,São Tomé i Príncipe,1.001,menys de 25.000 km quadrats,,,,,,
+170,Dominica,754,menys de 1.000 km quadrats,,,,,,
+171,Tonga,748,menys de 1.000 km quadrats,,,,,,
+172,Kiribati,717,menys de 1.000 km quadrats,,,,,,
+173,Singapur,707,menys de 1.000 km quadrats,,,,,,
+174,Estats Federats de Micronèsia,702,menys de 1.000 km quadrats,,,,,,
+175,Bahrain,665,menys de 1.000 km quadrats,,,,,,
+176,Saint Lucia,620,menys de 1.000 km quadrats,,,,,,
+177,Seychelles,455,menys de 1.000 km quadrats,,,,,,
+178,Andorra,468,menys de 1.000 km quadrats,,,,,,
+179,Palau,458,menys de 1.000 km quadrats,,,,,,
+180,Antigua i Barbuda,442,menys de 1.000 km quadrats,,,,,,
+181,Barbados,430,menys de 1.000 km quadrats,,,,,,
+182,Saint Vincent i les Grenadines,389,menys de 1.000 km quadrats,,,,,,
+183,Grenada,340,menys de 1.000 km quadrats,,,,,,
+184,Malta,316,menys de 1.000 km quadrats,,,,,,
+185,Maldives,300,menys de 1.000 km quadrats,,,,,,
+186,Saint Kitts i Nevis,261,menys de 1.000 km quadrats,,,,,,
+187,Illes Marshall,181,menys de 1.000 km quadrats,,,,,,
+188,Liechtenstein,160,menys de 1.000 km quadrats,,,,,,
+189,San Marino,61,menys de 1.000 km quadrats,,,,,,
+190,Tuvalu,26,menys de 1.000 km quadrats,,,,,,
+191,Nauru,21,menys de 1.000 km quadrats,,,,,,
+192,Mònaco,1,menys de 1.000 km quadrats,,,,,,
+193,Ciutat del Vaticà,0,menys de 1.000 km quadrats,,,,,,
