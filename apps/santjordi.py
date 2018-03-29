@@ -16,6 +16,14 @@ def welcome(chat):
     """ + texts.welcome(new_state)
         return string
 
+def play(chat,message):
+    #parse message: 9,11,12 or contact
+    #check state
+
+
+
+
+
 def check_state(chat):
     db_state=db.get_query("select state from santjordi where chat=" + chat + ";")
     if len(db_state)==0:

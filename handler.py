@@ -17,6 +17,9 @@ def handle(chat,sender,message):
     #SantJordi
     if message[:9]=="##comença":
         return santjordi.welcome(chat)
+
+    if chat == "34669214506@c.us":
+        return santjordi.play(chat,message)
     else:
         return -1
 
