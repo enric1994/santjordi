@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-from apps import random_number
-from apps import japo
-from apps import fruita
+from apps import fruita, santjordi, japo, random_number
 
 def handle(chat,sender,message):
     #Random number
@@ -16,6 +14,9 @@ def handle(chat,sender,message):
     if chat=="34669214506-1520230823@g.us":
         return fruita.check(message)
 
+    #SantJordi
+    if message[:9]=="##comença":
+        return santjordi.welcome(chat)
     else:
         return -1
 

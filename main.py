@@ -11,7 +11,7 @@ from webwhatsapi.objects.message import Message
 #Unicode trick to display in command line
 #uni = unicode(u'😂').encode('utf8')
 #print(uni)
-offline_mode=False
+offline_mode=True
 
 #Do the tests!!! $python -m unittest discover
 
@@ -69,11 +69,11 @@ schedule.every().day.at("20:45").do(fruita_cron)
 #Main loop
 #TODO Run message handling and cron in parallel
 while True:
-    try:
-        check_unread()
-        if not offline_mode: time.sleep(random.randint(5,10))
-        schedule.run_pending()
-    except:
-        print("ERROR")
+    #try:
+    check_unread()
+    if not offline_mode: time.sleep(random.randint(5,10))
+    schedule.run_pending()
+    #except:
+     #   print("ERROR")
 
  
