@@ -33,7 +33,7 @@ def play(chat,message):
 
     next_state=get_next_state(state,level)
 
-    if new_state==f_state:
+    if next_state==f_state:
         return get_text(state,level+1)
     else:
         return "aquest personatge no és el que estas buscant"
@@ -42,22 +42,22 @@ def play(chat,message):
 
 
 def check_state(chat):
-    db_state=db.get_query("select state from santjordi where chat=" + chat + ";")
+    db_state=db.get_query("select state from santjordi where chat='" + chat + "';")
     if len(db_state)==0:
         return -1
     state=db_state[0][0]
     return state
 
 def check_level(chat):
-    db_level=db.get_query("select level from santjordi where chat=" + chat + ";")
+    db_level=db.get_query("select level from santjordi where chat='" + chat + "';")
     
     level=db_level[0][0]
     return level
 
-#create table santjordi(chat varchar(255), state varchar(255), level int, has_been_cavaller int, has_been_princesa int, has_been_rei int, has_been_drac int, has_been_pages int, has_been_vaca int);
+#create table santjordi(chat varchar(255), state varchar(255), level int, bl int, has_been_cavaller int, has_been_princesa int, has_been_rei int, has_been_drac int, has_been_pages int, has_been_vaca int);
 #insert into santjordi(chat,state,level,has_been_cavaller,has_been_princesa,has_been_rei,has_been_drac,has_been_pages,has_been_vaca) values ("2","rei",0,0,0,0,0,0,0);
 def new_player(chat,state):
-    db.post_query("insert into santjordi(chat,state,level,has_been_cavaller,has_been_princesa,has_been_rei,has_been_drac,has_been_pages,has_been_vaca) values ('"+chat+"','"+state+"',0,0,0,0,0,0,0);")
+    db.post_query("insert into santjordi(chat,state,level,bl,has_been_cavaller,has_been_princesa,has_been_rei,has_been_drac,has_been_pages,has_been_vaca) values ('"+chat+"','"+state+"',0,0,0,0,0,0,0,0);")
 
 def gen_state():
     rand_state=random.randint(1,100)
