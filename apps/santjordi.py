@@ -11,37 +11,48 @@ def welcome(chat):
         return "Envia'm un missatge privat amb la paraula ##comença"
 
     state=check_state(chat)
-    if not state == "empty":
+    if not state == -1:
         return "Ja tens la història començada"
 
     else:
         new_state=gen_state()
         new_player(chat,new_state)
-        string=welcome + '''
-        ''' + texts.welcome(new_state)
+        string= texts.welcome + '''
+        ''' + get_text(new_state,0)
         return string
 
 def play(chat,message):
     f_chat=parse_number(message)
     if f_chat == -1:
         return -1
+    
+    f_state=check_state(f_chat)
+
+    state=check_state(chat)
+    level=check_level(chat)
+
+    next_state=get_next_state(state,level)
+
+    if new_state==f_state:
+        return get_text(state,level+1)
     else:
-        state=check_state(f_chat)
+        return "aquest personatge no és el que estas buscant"
 
-    #parse message: 9,11,12 or contact
-    #check state
-
-
-
+    return -1
 
 
 def check_state(chat):
     db_state=db.get_query("select state from santjordi where chat=" + chat + ";")
     if len(db_state)==0:
-        return "empty"
+        return -1
     state=db_state[0][0]
     return state
 
+def check_level(chat):
+    db_level=db.get_query("select level from santjordi where chat=" + chat + ";")
+    
+    level=db_level[0][0]
+    return level
 
 #create table santjordi(chat varchar(255), state varchar(255), level int, has_been_cavaller int, has_been_princesa int, has_been_rei int, has_been_drac int, has_been_pages int, has_been_vaca int);
 #insert into santjordi(chat,state,level,has_been_cavaller,has_been_princesa,has_been_rei,has_been_drac,has_been_pages,has_been_vaca) values ("2","rei",0,0,0,0,0,0,0);
@@ -62,7 +73,116 @@ def gen_state():
         return "drac"
     else:
         return "vaca"
-#def get_next
+
+def get_next_state(state,level):
+    if state == "cavaller":
+        if level == 0:
+            return "pages"
+        elif level == 1:
+            return "princesa"
+        elif level == 2:
+            return "drac"
+        elif level == 3:
+            return "end_cavaller"
+
+    if state == "princesa":
+        if level == 0:
+            return "rei"
+        elif level == 1:
+            return "drac"
+        elif level == 2:
+            return "cavaller"
+        elif level == 3:
+            return "end_princesa"
+
+    if state == "rei":
+        if level == 0:
+            return "pages"
+        elif level == 1:
+            return "princesa"
+        elif level == 2:
+            return "cavaller"
+        elif level == 3:
+            return "end_rei"
+
+    if state == "drac":
+        if level == 0:
+            return "vaca"
+        elif level == 1:
+            return "princesa"
+        elif level == 2:
+            return "cavaller"
+        elif level == 3:
+            return "end_drac"
+
+    if state == "pages":
+        if level == 0:
+            return "vaca"
+        elif level == 1:
+            return "cavaller"
+        elif level == 2:
+            return "end_pages"
+
+    if state == "vaca":
+        if level == 0:
+            return "drac"
+        elif level == 1:
+            return "end_vaca"
+
+def get_text(state,level):
+    if state == "cavaller":
+        if level == 0:
+            return texts.welcome_cavaller
+        elif level == 1:
+            return texts.cavaller_1
+        elif level == 2:
+            return texts.cavaller_2
+        elif level == 3:
+            return "molt bé has acabat!"
+
+    if state == "princesa":
+        if level == 0:
+            return texts.welcome_princesa
+        elif level == 1:
+            return texts.princesa_1
+        elif level == 2:
+            return texts.princesa_1
+        elif level == 3:
+            return "molt bé has acabat!"
+
+    if state == "rei":
+        if level == 0:
+            return texts.welcome_rei
+        elif level == 1:
+            return texts.rei_1
+        elif level == 2:
+            return texts.rei_2
+        elif level == 3:
+            return "molt bé has acabat!"
+
+    if state == "drac":
+        if level == 0:
+            return texts.welcome_drac
+        elif level == 1:
+            return texts.drac_1
+        elif level == 2:
+            return texts.drac_2
+        elif level == 3:
+            return "molt bé has acabat!"
+
+    if state == "pages":
+        if level == 0:
+            return texts.welcome_pages
+        elif level == 1:
+            return texts.pages_1
+        elif level == 2:
+            return "molt bé has acabat!"
+
+    if state == "vaca":
+        if level == 0:
+            return texts.welcome_vaca
+        elif level == 1:
+            return "molt bé has acabat!"
 #def update_state
 
 def parse_number(input):

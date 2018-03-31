@@ -21,7 +21,7 @@ El que més greu li sap al pagès és que el sorteig d’avui a senyalat a l’e
 Tu, l’intrèpid cavaller, et puges al cavall i sense pensar-ho dos cops et dirigeixes a socorre a la princesa. Troba a la princesa 👸🏼 per continuar la història.
 '''
 
-caballer_2='''caballer2'''
+cavaller_2='''caballer2'''
 
 welcome_princesa='''En aquest conte t'ha tocat ser la  princesa 👸🏼!  .Tens el cor robat a tots els ciutadans, per la teva bellesa i elegància.
 
@@ -89,13 +89,7 @@ Has d’escriure el número de telèfon de la persona que té el personatge assi
 '''
 #   👑 rei
 #   👦🏻 primcep
-def welcome(state):
-    if state == "cavaller": return welcome_cavaller
-    elif state == "princesa": return welcome_princesa
-    elif state == "rei": return welcome_rei
-    elif state == "pages": return welcome_pages
-    elif state == "drac": return welcome_drac
-    elif state == "vaca": return welcome_vaca
+
 
 
 
