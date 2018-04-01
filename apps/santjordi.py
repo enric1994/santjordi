@@ -11,9 +11,16 @@ def welcome(chat):
         return -1
 
     state=check_state(chat)
-    if not state == -1:
-        return "Ja tens la història començada"
+    level=check_level(chat)
 
+    if get_next_state(state,level) == "end":
+        new_state=gen_state()
+        player_repeat(chat,new_state)
+        string= get_text(chat,new_state,0,[0,0,0,0,0,0])
+        return string
+
+    elif not state == -1:
+        return "Ja tens la història començada"
     else:
         new_state=gen_state()
         new_player(chat,new_state)
@@ -66,14 +73,18 @@ def check_state(chat):
 
 def check_level(chat):
     db_level=db.get_query("select level from santjordi where chat='" + chat + "';")
-    
-    level=db_level[0][0]
+    try:
+        level=db_level[0][0]
+    except:
+        return -1
     return level
 
 #create table santjordi(chat varchar(255), state varchar(255), level int, bl int, has_been_cavaller int, has_been_princesa int, has_been_rei int, has_been_drac int, has_been_pages int, has_been_vaca int);
 #insert into santjordi(chat,state,level,has_been_cavaller,has_been_princesa,has_been_rei,has_been_drac,has_been_pages,has_been_vaca) values ("2","rei",0,0,0,0,0,0,0);
 def new_player(chat,state):
     db.post_query("insert into santjordi(chat,state,level,bl,has_been_cavaller,has_been_princesa,has_been_rei,has_been_drac,has_been_pages,has_been_vaca) values ('"+chat+"','"+state+"',0,0,0,0,0,0,0,0);")
+def player_repeat(chat,state):
+    db.post_query("update santjordi set state ='"+state+"',level=0 where chat = '"+chat+"';")
 
 def gen_state():
     rand_state=random.randint(1,100)
