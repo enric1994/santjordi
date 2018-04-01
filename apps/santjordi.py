@@ -33,15 +33,16 @@ def play(chat,message):
     level=check_level(chat)
 
     next_state=get_next_state(state,level)
-    
-    if next_state=="end":
-        set_has_been(chat,state)
+
 
 
     if next_state == f_state:
         next_text = get_text(state,level+1,get_has_been(chat))
         level_up(chat)
 
+        if check_state(chat)=="end":
+            set_has_been(chat,state)
+        
         return next_text
     else:
         return "aquest personatge no és el que estas buscant"
@@ -53,7 +54,7 @@ def set_has_been(chat,state):
 
 def level_up(chat):
     level=check_level(chat)
-    db.post_query("update santjordi set level="+str(level+1)" where chat='"+chat+"';")
+    db.post_query("update santjordi set level="+str(level+1)+" where chat='"+chat+"';")
 
 
 def get_has_been(chat):
@@ -234,6 +235,7 @@ def end_game_text(has_been):
     '''+ gen_emojis(has_been) + '''
     Per viure el conte des d’un altre punt de vista, torna a escriure: *comença*
     '''
+    return string
 def gen_emojis(has_been):
     string=" "
     if has_been[2] == 1:
