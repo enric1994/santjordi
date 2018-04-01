@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from apps import fruita, santjordi, japo, random_number
+import re
 
 def handle(chat,sender,message):
     #Random number
@@ -15,10 +16,18 @@ def handle(chat,sender,message):
         return fruita.check(message)
 
     #SantJordi
-    if message[:9]=="comença" :#and chat == "34669214506@c.us":
-        return santjordi.welcome(chat)
+    print(message)
+    pattern=re.compile(r": (\w*)")
+    search=pattern.search(message)
+    try:
+        p_message=search.group(1)
+        print(p_message)
 
-    if not chat =="-123":
+        if p_message=="conte" or p_message=="Conte" :#and chat == "34669214506@c.us":
+            return santjordi.welcome(chat)
+
+    except:
+        print("contact?")
         return santjordi.play(chat,message)
     else:
         return -1

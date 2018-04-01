@@ -5,7 +5,7 @@ import random
 from apps import santjordi_texts as texts
 
 def welcome(chat):
-
+    print("welcome")
     #check that is a direct message
     if len(chat)>20:
         return -1
@@ -24,16 +24,13 @@ def welcome(chat):
     else:
         new_state=gen_state()
         new_player(chat,new_state)
-        string= texts.welcome + '''
-        ''' + get_text(chat,new_state,0,[0,0,0,0,0,0]) + '''
-        ''' + texts.how_to
+        string= texts.welcome + get_text(chat,new_state,0,[0,0,0,0,0,0]) + texts.how_to
         return string
 
 def play(chat,message):
     f_chat=parse_number(message)
     if f_chat == -1:
         return -1
-    
     f_state=check_state(f_chat)
 
     state=check_state(chat)
@@ -215,7 +212,7 @@ def get_text(chat,state,level,has_been):
 
 def parse_number(input):
     #contact attached
-    if not input.find("VCardMessage") == -1:
+    if not input.lower().find("vcard") == -1:
         pattern=re.compile(r"waid=(\d*)")
         search=pattern.search(input)
         chat=search.group(1)
@@ -241,7 +238,7 @@ def end_game_text(chat,state,has_beenn):
     has_been=get_has_been(chat)
     string='''Increïble! Has completat el conte amb un dels personatges.
     '''+ gen_emojis(has_been) + '''
-    Per viure el conte des d’un altre punt de vista, torna a escriure: *comença*
+    Per viure el conte des d’un altre punt de vista, torna a escriure: *conte*
     '''
     return string
 def gen_emojis(has_been):

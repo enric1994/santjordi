@@ -11,7 +11,7 @@ from webwhatsapi.objects.message import Message
 #Unicode trick to display in command line
 #uni = unicode(u'😂').encode('utf8')
 #print(uni)
-offline_mode=True
+offline_mode=False
 
 #Do the tests!!! $python -m unittest discover
 
@@ -38,7 +38,8 @@ def check_unread():
             for message in reversed(contact.messages):
                 if isinstance(message, Message):
                     print(message)
-                    response=handler.handle(contact.chat.id,message.sender.id,message.safe_content[:-3])
+
+                    response=handler.handle(contact.chat.id,message.sender.id,str(message)[:-4])
                     if response!=-1:
                         if not offline_mode: time.sleep(random.randint(3,5))
                         contact.chat.send_message(str(response))

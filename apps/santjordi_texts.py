@@ -183,7 +183,7 @@ vaca_1='''Molt bé! Has trobat al drac.
 *NYAC!* No has durat ni 3 segons, se’t ha empassat d’una sola peça.
 
 
-Em sap greu, la teva història s’acaba aquí. Però pots tornar a començar i fer un altre paper! Escriu *començar* per reencarnar-te en un altre personatge.
+Em sap greu, la teva història s’acaba aquí. Però pots tornar a començar i fer un altre paper! Escriu *conte* per reencarnar-te en un altre personatge.
 
 '''
 
@@ -192,9 +192,9 @@ how_to='''*Com trobar un personatge per continuar la història?*
 
 És molt fàcil, primer de tot has de trobar a algú que participi en el conte i li hagi tocat el personatge que busques.
 
-Després has d’*adjuntar*📎 el contacte en aquest chat ⬇
+Després has d’ *adjuntar* 📎 el contacte en aquest chat ⬇
 
-També pots escriure el número de telèfon 📞 de la persona que té el personatge que busques. Per exemple_ *34*693923272 _
+També pots escriure el número de telèfon 📞 de la persona que té el personatge que busques. Per exemple_ 34693923272 _
 
 ❕Assegurat que la persona que indiques té el personatge que necessites per fer avançar la història.
 '''
@@ -207,7 +207,7 @@ restart='''Increïble! Has completat el conte amb un dels personatges.
 
 👑 - 👦🗡️ - 👸🏼 - 🐲 -  👨‍🌾 - 🐮
 
-Per viure el conte des d’un altre punt de vista, torna a escriure: *comença*
+Per viure el conte des d’un altre punt de vista, torna a escriure: *conte*
 
 '''
 
