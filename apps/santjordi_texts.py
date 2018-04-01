@@ -199,7 +199,8 @@ També pots escriure el número de telèfon 📞 de la persona que té el person
 ❕Assegurat que la persona que indiques té el personatge que necessites per fer avançar la història.
 '''
 
-end='''_De la sang que en brollà, en sorgí ràpidament un roser, amb les roses més vermelles que la princesa hagués vist mai, roser del que el jove cavaller en tallà una rosa i li oferí a la princesa._
+end='''
+'''+'''_De la sang que en brollà, en sorgí ràpidament un roser, amb les roses més vermelles que la princesa hagués vist mai, roser del que el jove cavaller en tallà una rosa i li oferí a la princesa._
 '''
 
 restart='''Increïble! Has completat el conte amb un dels personatges.

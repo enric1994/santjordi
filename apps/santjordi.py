@@ -35,7 +35,8 @@ def play(chat,message):
     next_state=get_next_state(state,level)
 
     if next_state == f_state:
-        next_text = get_text(state,level+1)
+        #get has been
+        next_text = get_text(state,level+1,has_been)
         #update db level up
 
         return next_text
@@ -87,7 +88,7 @@ def get_next_state(state,level):
         elif level == 2:
             return "drac"
         elif level == 3:
-            return "end_cavaller"
+            return "end"
 
     if state == "princesa":
         if level == 0:
@@ -95,7 +96,7 @@ def get_next_state(state,level):
         elif level == 1:
             return "cavaller"
         elif level == 2:
-            return "end_princesa"
+            return "end"
 
     if state == "rei":
         if level == 0:
@@ -105,7 +106,7 @@ def get_next_state(state,level):
         elif level == 2:
             return "cavaller"
         elif level == 3:
-            return "end_rei"
+            return "end"
 
     if state == "drac":
         if level == 0:
@@ -115,7 +116,7 @@ def get_next_state(state,level):
         elif level == 2:
             return "cavaller"
         elif level == 3:
-            return "end_drac"
+            return "end"
 
     if state == "pages":
         if level == 0:
@@ -125,15 +126,15 @@ def get_next_state(state,level):
         elif level == 2:
             return "princesa"
         elif level == 3:
-            return "end_pages"
+            return "end"
 
     if state == "vaca":
         if level == 0:
             return "drac"
         elif level == 1:
-            return "end_vaca"
+            return "end"
 
-def get_text(state,level):
+def get_text(state,level,has_been):
     if state == "cavaller":
         if level == 0:
             return texts.welcome_cavaller
@@ -142,7 +143,7 @@ def get_text(state,level):
         elif level == 2:
             return texts.cavaller_2
         elif level == 3:
-            return texts.cavaller_3
+            return texts.cavaller_3 + texts.end + end_game_text(has_been)
 
     if state == "princesa":
         if level == 0:
@@ -150,7 +151,7 @@ def get_text(state,level):
         elif level == 1:
             return texts.princesa_1
         elif level == 2:
-            return texts.princesa_2
+            return texts.princesa_2 + texts.end + end_game_text(has_been)
 
 
     if state == "rei":
@@ -161,7 +162,7 @@ def get_text(state,level):
         elif level == 2:
             return texts.rei_2
         elif level == 3:
-            return texts.rei_3
+            return texts.rei_3 + texts.end + end_game_text(has_been)
 
     if state == "drac":
         if level == 0:
@@ -171,7 +172,7 @@ def get_text(state,level):
         elif level == 2:
             return texts.drac_2
         elif level == 3:
-            return texts.drac_3
+            return texts.drac_3 + texts.end + end_game_text(has_been)
 
     if state == "pages":
         if level == 0:
@@ -181,13 +182,13 @@ def get_text(state,level):
         elif level == 2:
             return texts.pages_2
         elif level == 3:
-            return texts.pages_3
+            return texts.pages_3 + texts.end + end_game_text(has_been)
 
     if state == "vaca":
         if level == 0:
             return texts.welcome_vaca
         elif level == 1:
-            return texts.vaca_1
+            return texts.vaca_1 + end_game_text(has_been)
 #def update_state
 
 def parse_number(input):
