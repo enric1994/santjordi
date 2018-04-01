@@ -15,7 +15,7 @@ def handle(chat,sender,message):
         return fruita.check(message)
 
     #SantJordi
-    if message[:9]=="##comença" :#and chat == "34669214506@c.us":
+    if message[:9]=="comença" :#and chat == "34669214506@c.us":
         return santjordi.welcome(chat)
 
     if chat == "34669214506@c.us":
