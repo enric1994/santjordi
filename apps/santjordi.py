@@ -33,6 +33,10 @@ def play(chat,message):
     level=check_level(chat)
 
     next_state=get_next_state(state,level)
+    
+    if next_state=="end":
+        set_has_been(chat,state)
+
 
     if next_state == f_state:
         next_text = get_text(state,level+1,get_has_been(chat))
@@ -44,9 +48,12 @@ def play(chat,message):
 
     return -1
 
+def set_has_been(chat,state):
+    db.post_query("update santjordi set has_been_"+ state+"=1 where chat='"+chat+"';")
+
 def level_up(chat):
     level=check_level(chat)
-    db.query("update santjordi set level="+str(level+1)" where chat='"+chat+"';")
+    db.post_query("update santjordi set level="+str(level+1)" where chat='"+chat+"';")
 
 
 def get_has_been(chat):
