@@ -18,7 +18,7 @@ def welcome(chat):
         new_state=gen_state()
         new_player(chat,new_state)
         string= texts.welcome + '''
-        ''' + get_text(new_state,0) + '''
+        ''' + get_text(chat,new_state,0,[0,0,0,0,0,0]) + '''
         ''' + texts.how_to
         return string
 
@@ -37,12 +37,8 @@ def play(chat,message):
 
 
     if next_state == f_state:
-        next_text = get_text(state,level+1,get_has_been(chat))
+        next_text = get_text(chat,state,level+1,get_has_been(chat))
         level_up(chat)
-
-        if check_state(chat)=="end":
-            set_has_been(chat,state)
-        
         return next_text
     else:
         return "aquest personatge no és el que estas buscant"
@@ -149,7 +145,7 @@ def get_next_state(state,level):
         elif level == 1:
             return "end"
 
-def get_text(state,level,has_been):
+def get_text(chat,state,level,has_been):
     if state == "cavaller":
         if level == 0:
             return texts.welcome_cavaller
@@ -158,7 +154,7 @@ def get_text(state,level,has_been):
         elif level == 2:
             return texts.cavaller_2
         elif level == 3:
-            return texts.cavaller_3 + texts.end + end_game_text(has_been)
+            return texts.cavaller_3 + texts.end + end_game_text(chat,state,has_been)
 
     if state == "princesa":
         if level == 0:
@@ -166,7 +162,7 @@ def get_text(state,level,has_been):
         elif level == 1:
             return texts.princesa_1
         elif level == 2:
-            return texts.princesa_2 + texts.end + end_game_text(has_been)
+            return texts.princesa_2 + texts.end + end_game_text(chat,state,has_been)
 
 
     if state == "rei":
@@ -177,7 +173,7 @@ def get_text(state,level,has_been):
         elif level == 2:
             return texts.rei_2
         elif level == 3:
-            return texts.rei_3 + texts.end + end_game_text(has_been)
+            return texts.rei_3 + texts.end + end_game_text(chat,state,has_been)
 
     if state == "drac":
         if level == 0:
@@ -187,7 +183,7 @@ def get_text(state,level,has_been):
         elif level == 2:
             return texts.drac_2
         elif level == 3:
-            return texts.drac_3 + texts.end + end_game_text(has_been)
+            return texts.drac_3 + texts.end + end_game_text(chat,state,has_been)
 
     if state == "pages":
         if level == 0:
@@ -197,13 +193,13 @@ def get_text(state,level,has_been):
         elif level == 2:
             return texts.pages_2
         elif level == 3:
-            return texts.pages_3 + texts.end + end_game_text(has_been)
+            return texts.pages_3 + texts.end + end_game_text(chat,state,has_been)
 
     if state == "vaca":
         if level == 0:
             return texts.welcome_vaca
         elif level == 1:
-            return texts.vaca_1 + end_game_text(has_been)
+            return texts.vaca_1 + end_game_text(chat,state,has_been)
 #def update_state
 
 def parse_number(input):
@@ -229,8 +225,9 @@ def parse_number(input):
 #<VCardMessage - vcard from eric at 2018-03-30 22:51:44 (b'BEGIN:VCARD\nVERSION:3.0\nN:Moreu;Enric;;;\nFN:Enric Moreu\nitem1.TEL;waid=34669214506:+34 669 21 45 06\nitem1.X-ABLabel:Mvil\nEND:VCARD')>
 #<VCardMessage - vcard from Jo at 2018-03-30 22:52:49 (b'BEGIN:VCARD\nVERSION:3.0\nN:;+34616088364;;;\nFN:+34616088364\nitem1.TEL;waid=34616088364:+34 616 08 83 64\nitem1.X-ABLabel:Mobile\nEND:VCARD')>
 
-def end_game_text(has_been):
-
+def end_game_text(chat,state,has_beenn):
+    set_has_been(chat,state)
+    has_been=get_has_been(chat)
     string='''Increïble! Has completat el conte amb un dels personatges.
     '''+ gen_emojis(has_been) + '''
     Per viure el conte des d’un altre punt de vista, torna a escriure: *comença*

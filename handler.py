@@ -18,7 +18,7 @@ def handle(chat,sender,message):
     if message[:9]=="comença" :#and chat == "34669214506@c.us":
         return santjordi.welcome(chat)
 
-    if chat == "34669214506@c.us":
+    if not chat =="-123":
         return santjordi.play(chat,message)
     else:
         return -1
