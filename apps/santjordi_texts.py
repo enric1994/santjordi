@@ -1,6 +1,6 @@
-welcome='''Hola! Estàs preparat per començar la *Llegenda de Sant Jordi* 🌹 ?
+welcome='''Hola! Estàs preparat per començar *el conte interactiu de Sant Jordi* 🌹 ?
 
-Això és un *conte interactiu* en que viuràs la llegenda des del punt de vista de cada un dels personatges.
+En aquest joc viuràs la història des del punt de vista d'un un dels personatges.
 
 Per cert… No et preocupis per mi, jo només sóc un robot 🤖, que t’anirà narrant la història:
 
@@ -8,7 +8,7 @@ _*Fa molt i molt de temps* el poble de Montblanc era devastat per un monstre fer
 
 '''
 
-welcome_cavaller='''En aquest conte t'ha tocat ser *el cavaller* 👦🗡️! 
+welcome_cavaller='''En aquest conte t'ha tocat ser... *el cavaller* 👦🗡️! 
 
 El teu nom és Jordi i et dediques a rondar pels pobles fent justícia, llueixes una brillant armadura i sempre vas sobre el teu cavall blanc.
 
@@ -44,7 +44,7 @@ Comences una combat aferrissat contra la mala bèstia, que es mou amb molta agil
 Però la lluita no dura gaire, ja que d’una estocada li claves la teva llança i deixes a l’animal mal ferit, que mor fent el crit més agut que hagis sentit.
 '''
 
-welcome_princesa='''En aquest conte t'ha tocat ser *la  princesa* 👸🏼! 
+welcome_princesa='''En aquest conte t'ha tocat ser... *la  princesa* 👸🏼! 
 Tens el cor robat a tots els ciutadans, per la teva gran bellesa i elegància. Avui el rei t’ha convocat perquè t’ha de donar una notícia.
 
 Troba a al rei 👑 per continuar la història.
@@ -76,7 +76,7 @@ I comença un combat aferrissat. però la lluita no dura gaire, ja que d’una e
 
 '''
 
-welcome_rei='''En aquest conte t'ha tocat ser el *rei* 👑! . 
+welcome_rei='''En aquest conte t'ha tocat ser... el *rei* 👑! . 
 
 Ets el governant del poble, que està amenaçat per un drac ferotge. 
 
@@ -111,7 +111,8 @@ Comença una terrible lluita entre el cavaller i la fera, que es mou ràpidament
 Fins que escoltes un últim gran crit, el cavaller a travessat al drac amb la seva llança. El poble esclata en celebracions, abraçades i més abraçades, el drac ha mort.
 
 '''
-welcome_pages='''T'ha tocat ser un pagès 👨‍🌾 ! El teu dia a dia es fa bastant complicat per culpa el drac, que es menja el teu bestiar. 
+welcome_pages='''En aquest conte t'ha tocat ser... *un pagès* 👨‍🌾 ! 
+El teu dia a dia es fa bastant complicat per culpa el drac, que es menja el teu bestiar. 
 
 Per tal de saciar la gana del drac, estàs participant en una iniciativa que consisteix en entregar cada dia una bestia al drac. Es per això que li has de comunicar a la teva estimada vaca que avui s’haurà de sacrificar per salvar a la resta del bestiar. 
 
@@ -142,7 +143,8 @@ Al cap de res, precedit d’una olor inhumana es manifesta la terrible fera, que
 La lluita acaba molt ràpid, en Jordi travessa al drac amb la seva llança i acaba amb la seva vida.
 
 '''
-welcome_drac='''En aquest conte t’ha tocat ser el drac 🐲! . Sempre hi ha d’haver un dolent, i aquest cop t’ha tocat a tu.
+welcome_drac='''En aquest conte t’ha tocat ser... *el drac* 🐲!
+Sempre hi ha d’haver un dolent, i aquest cop t’ha tocat a tu.
 
 El teu dia a dia és bastant relaxat, et passeges tranquil·lament per la muntanya devorant els ramats que trobes. Per algun motiu, avui et ve molt de gust devorar una vaca i no pararàs fins a trobar-ne una. 
 
@@ -171,7 +173,8 @@ Mentre caus al terra, et passa per davant tota la teva vida, des de que vas sort
  '''
 
 
-welcome_vaca='''T'ha tocat ser una vaca 🐮.  Com ja sabràs, és un personatge de vital importància en aquest conte.
+welcome_vaca='''En aquest conte t'ha tocat ser... *una vaca* 🐮. 
+Com ja sabràs, és un personatge de vital importància en aquest conte.
 
 La teva vida com a vaca és bastant complicada amb un monstre assassí rondant les muntanyes, i encara més des de que t’han escollit com a ofrena pel drac. 
 
@@ -190,13 +193,10 @@ Em sap greu, la teva història s’acaba aquí. Però pots tornar a començar i 
 
 how_to='''*Com trobar un personatge per continuar la història?*
 
-És molt fàcil, primer de tot has de trobar a algú que participi en el conte i li hagi tocat el personatge que busques.
+1⃣ *Trobar* 🔎 a algú que participi en el conte i li hagi tocat el personatge que busques.
 
-Després has d’ *adjuntar* 📎 el contacte en aquest chat ⬇
+2⃣ *Adjuntar* 📎 el contacte en aquest chat ⬇
 
-També pots escriure el número de telèfon 📞 de la persona que té el personatge que busques. Per exemple_ 34693923272 _
-
-❕Assegurat que la persona que indiques té el personatge que necessites per fer avançar la història.
 '''
 
 end='''

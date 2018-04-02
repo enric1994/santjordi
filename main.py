@@ -46,34 +46,12 @@ def check_unread():
                     else:
                         print("No answer")
 
-#####Cron functions
-
-def les_planes_cron():
-    mygroup=driver.get_chat_from_id("34607587563-1505139567@g.us")
-    mygroup.send_message(les_planes.message())
-    time.sleep(60)
-    return
-def japo_cron():
-    if db.exists("japo"):
-        db.post_query("drop table japo;")
-    return
-def fruita_cron():
-    mygroup=driver.get_chat_from_id("34669214506-1520230823@g.us")
-    mygroup.send_message(fruita.message())
-    time.sleep(60)
-    return
-#####Schedule list
-schedule.every().day.at("07:00").do(les_planes_cron)
-schedule.every().day.at("23:00").do(japo_cron)
-schedule.every().day.at("20:45").do(fruita_cron)
 
 #Main loop
-#TODO Run message handling and cron in parallel
 while True:
     #try:
     check_unread()
     if not offline_mode: time.sleep(random.randint(5,10))
-    schedule.run_pending()
     #except:
      #   print("ERROR")
 
