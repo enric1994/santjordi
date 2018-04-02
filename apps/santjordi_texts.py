@@ -76,7 +76,7 @@ I comença un combat aferrissat. però la lluita no dura gaire, ja que d’una e
 
 '''
 
-welcome_rei='''En aquest conte t'ha tocat ser... el *rei* 👑! . 
+welcome_rei='''En aquest conte t'ha tocat ser... *el rei* 👑! 
 
 Ets el governant del poble, que està amenaçat per un drac ferotge. 
 

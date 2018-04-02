@@ -13,8 +13,27 @@ def welcome(chat):
     state=check_state(chat)
     level=check_level(chat)
 
-    if get_next_state(state,level) == "end":
-        new_state=gen_state()
+    if get_next_state(state,level) == "end" or level >3 or (level>1 and state=="vaca") or (level>2 and state=="princesa"):
+        #check character repeat
+        retry=True
+        while retry:
+            new_state=gen_state()
+            has_been = get_has_been(chat)
+
+            if new_state=="cavaller" and has_been[0]==0:
+                retry=False
+            if new_state=="princesa" and has_been[1]==0:
+                retry=False
+            if new_state=="rei" and has_been[2]==0:
+                retry=False
+            if new_state=="drac" and has_been[3]==0:
+                retry=False
+            if new_state=="pages" and has_been[4]==0:
+                retry=False
+            if new_state=="vaca" and has_been[5]==0:
+                retry=False
+
+
         player_repeat(chat,new_state)
         string= get_text(chat,new_state,0,[0,0,0,0,0,0])
         return string
@@ -27,14 +46,20 @@ def welcome(chat):
         string= texts.welcome + get_text(chat,new_state,0,[0,0,0,0,0,0]) + texts.how_to
         return string
 
-def play(chat,message):
+def play(chat,message,test):
+    state=check_state(chat)
+    level=check_level(chat)
+    if test:
+        next_text = get_text(chat,state,level+1,get_has_been(chat))
+        level_up(chat)
+        return next_text
+
     f_chat=parse_number(message)
     if f_chat == -1:
         return -1
     f_state=check_state(f_chat)
 
-    state=check_state(chat)
-    level=check_level(chat)
+
 
     next_state=get_next_state(state,level)
 
@@ -212,13 +237,15 @@ def get_text(chat,state,level,has_been):
 
 def parse_number(input):
     #contact attached
-    if not input.lower().find("vcard") == -1:
-        pattern=re.compile(r"waid=(\d*)")
-        search=pattern.search(input)
-        chat=search.group(1)
-        if len(chat) == 11:
-            return chat + "@c.us"
-
+    try:
+        if not input.lower().find("vcard") == -1:
+            pattern=re.compile(r"waid=(\d*)")
+            search=pattern.search(input)
+            chat=search.group(1)
+            if len(chat) == 11:
+                return chat + "@c.us"
+    except:
+        return "No puc llegir aquest contacte, prova introduint el número (Exemple: 34693923272)"
 
 
     #phone number parsing
@@ -236,10 +263,10 @@ def parse_number(input):
 def end_game_text(chat,state,has_beenn):
     set_has_been(chat,state)
     has_been=get_has_been(chat)
-    string='''Increïble! Has completat el conte amb un dels personatges.
+    string='''
+    Increïble! Has completat el conte amb un dels personatges.
     '''+ gen_emojis(has_been) + '''
-    Per viure el conte des d’un altre punt de vista, torna a escriure: *conte*
-    '''
+    Per viure el conte des d’un altre punt de vista, torna a escriure: *conte*'''
     return string
 def gen_emojis(has_been):
     string=" "
@@ -268,12 +295,4 @@ def gen_emojis(has_been):
     else:
         string = string + " - ❔" 
      
-    for x in range(0,5):
-        if not has_been[x] == 1:
-            return string
-    return '''No m’ho puc creure! Has completat el conte amb tots els personatges! 
-
-Espero que t’ho hagis passat tant bé com jo escrivint aquesta història.
-
-Feliç Sant Jordi!
-'''
+    return string
