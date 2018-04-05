@@ -30,11 +30,12 @@ Troba a la princesa 👸🏼 per continuar la història.
 
 cavaller_2='''Genial! Has trobat la princesa. Sembla molt agitada, i et diu:
 
-_ - Fugiu! fugiu ràpidament d'aquí! noble cavaller, si us quedeu per aquí, apareixerà la bèstia i només us vegi us devorarà. _
+_- Fugiu! fugiu ràpidament d'aquí! Noble cavaller, si us quedeu per aquí, apareixerà la bèstia i només us vegi us devorarà._
 
-I tu, amb la teva greu i tranquil·la veu li contestes _’No patiu jove donzella.Si sóc aquí es per què hi he vingut expressament. He vingut des de molt lluny per protegir-vos a vós i a alliberar el vostre poble d'aquesta fera’_.'
+I tu, amb la teva greu i tranquil·la veu li contestes _’No patiu jove donzella. Si sóc aquí és perquè hi he vingut expressament. He vingut des de molt lluny per protegir-vos a vós i a alliberar el vostre poble d'aquesta fera’_.
 
 De sobte, es comença a sentir una olor pudent que cada cop es fa més intensa…
+
 Troba al drac 🐲 per continuar la història.
 '''
 
@@ -52,7 +53,7 @@ Troba a al rei 👑 per continuar la història.
 
 princesa_1='''Molt bé! Has trobat al rei, el qual sembla bastant disgustat. 
 
-Ell comença explican-te l’última llei que ha aprovat: cada dia s’entregarà una persona al drac, per tal de calmar la seva sed de sang i que pari de matar ramats sencers. La manera d’escollir la persona serà fent un sorteig on entraran tots els habitants del poble.
+Ell comença explicant l’última llei que ha aprovat: cada dia s’entregarà una persona al drac, per tal de calmar la seva set de sang i que pari de matar ramats sencers. La manera d’escollir la persona serà fent un sorteig on entraran tots els habitants del poble.
 
 Per desgràcia, en el sorteig d’avui ha sortit el teu nom, seràs sacrificada per saciar al drac.
 
@@ -63,33 +64,31 @@ princesa_2='''Surts sola del castell. Hi ha un silenci sepulcral.
 
 Tot el poble t’observa des de la llunyania mentre tu esperes la imminent arribada del drac…
 
-_ Però mentre la noia es dirigia cap al cau del monstre, aparegué un jove cavaller, amb una brillant armadura , muntat sobre un cavall blanc_
+_Però mentre la noia es dirigia cap al cau del monstre, aparegué un jove cavaller, amb una brillant armadura , muntat sobre un cavall blanc_
 
-_ ‘Fugiu! fugiu ràpidament d'aquí! noble cavaller, si us quedeu per aquí, apareixerà la bèstia i només us vegi us devorarà.’ _Li dius al valent cavaller.
+_‘Fugiu! fugiu ràpidament d'aquí! noble cavaller, si us quedeu per aquí, apareixerà la bèstia i només us vegi us devorarà.’_ Li dius al valent cavaller.
 
-Ell et contesta: _’No patiu jove donzella.Si sóc aquí es per què hi he vingut expressament. He vingut des de molt lluny per protegir-vos a vós i a alliberar el vostre poble d'aquesta fera’_.
+Ell et contesta: _’No patiu jove donzella. Si sóc aquí és perquè hi he vingut expressament. He vingut des de molt lluny per protegir-vos a vós i a alliberar el vostre poble d'aquesta fera’_.
 
 De sobte: *PAM!* El drac apareix amb un esgarrifant crit.
 
 I comença un combat aferrissat. però la lluita no dura gaire, ja que d’una estocada el cavaller deixa a l’animal mal ferit, que mor doblegant-se entre crits.
 
-
 '''
 
-welcome_rei='''En aquest conte t'ha tocat ser... *el rei* 👑! 
+welcome_rei='''En aquest conte t'ha tocat ser... *el rei* 👑!
 
-Ets el governant del poble, que està amenaçat per un drac ferotge. 
+Ets el governant del poble, que està amenaçat per un drac ferotge. Per tal de calmar a la bèstia li entregueu part dels ramats cada dia, és per això que has de parlar amb el pagès i dir-li que avui li toca sacrificar una vaca. 
 
-Per tal de calmar a la bèstia li entregueu part dels ramats cada dia, és per això que has de parlar amb el pagès i dir-li que avui li toca sacrificar una vaca. 
-
-Troba al pagès  👨‍🌾 per continuar la història. ”
+Troba al pagès  👨‍🌾 per continuar la història.
 '''
 
 rei_1=''' Molt bé! Has trobat al pagès. Sembla que no li fa massa il·lusió tenir que entregar una vaca.
 
 És per això que et comunica una proposta dels ramaders de la zona: sacrificar cada dia una persona, ja que per tots és sabut que el que més sacia al drac són les persones. Així el drac deixaria de fer malifetes per aquelles terres.
 
-Com que ets un rei just, acceptes la proposta i la anuncies a tot el regne: cada dia es sortejarà qui serà entregat al drac. El que no t’esperaves és que al cap de poc sortiria la princesa escollida, per com ets un governant sever no fas cap excepció.
+
+Com que ets un rei just, acceptes la proposta i la anuncies a tot el regne: cada dia es sortejarà qui serà entregat al drac. El que no t’esperaves és que al cap de poc sortiria la princesa escollida, però com ets un governant sever no fas cap excepció.
 
 Troba la princesa  👸🏼 per continuar la història.
 
@@ -112,9 +111,10 @@ Fins que escoltes un últim gran crit, el cavaller a travessat al drac amb la se
 
 '''
 welcome_pages='''En aquest conte t'ha tocat ser... *un pagès* 👨‍🌾 ! 
+
 El teu dia a dia es fa bastant complicat per culpa el drac, que es menja el teu bestiar. 
 
-Per tal de saciar la gana del drac, estàs participant en una iniciativa que consisteix en entregar cada dia una bestia al drac. Es per això que li has de comunicar a la teva estimada vaca que avui s’haurà de sacrificar per salvar a la resta del bestiar. 
+Per tal de saciar la gana del drac, estàs participant en una iniciativa que consisteix en entregar cada dia una bestia al drac. És per això que li has de comunicar a la teva estimada vaca que avui s’haurà de sacrificar per salvar a la resta del bestiar. 
 
 Troba la vaca 🐮 per poder continuar la història.
 '''
@@ -144,6 +144,7 @@ La lluita acaba molt ràpid, en Jordi travessa al drac amb la seva llança i aca
 
 '''
 welcome_drac='''En aquest conte t’ha tocat ser... *el drac* 🐲!
+
 Sempre hi ha d’haver un dolent, i aquest cop t’ha tocat a tu.
 
 El teu dia a dia és bastant relaxat, et passeges tranquil·lament per la muntanya devorant els ramats que trobes. Per algun motiu, avui et ve molt de gust devorar una vaca i no pararàs fins a trobar-ne una. 
@@ -151,7 +152,7 @@ El teu dia a dia és bastant relaxat, et passeges tranquil·lament per la muntan
 Troba una vaca 🐮 per poder continuar la història.
 '''
 
-drac_1='''Molt bé! Has trobat una vaca 🐮. Deliciosa per cert.
+drac_1='''Molt bé! Has trobat una vaca 🐮 ,deliciosa per cert.
 
 Ara, com cada dia et dirigeixes a davant del palau, a buscar la ofrena diària, que tocarà avui?
 
@@ -169,11 +170,13 @@ Però… Mmm… Sents una olor que no t’esperaves, és un cavaller! I a sobre 
 Troba al cavaller  👦🗡️ per continuar la història.
 '''
 drac_3=''' Malauradament, sembla que el guerrer és més ràpid que tu i … *NYAC* ! Et clava la seva afilada llança. 
+
 Mentre caus al terra, et passa per davant tota la teva vida, des de que vas sortir del ou, la teva primera dent, el teu primer vol, la teva primera presa...
  '''
 
 
-welcome_vaca='''En aquest conte t'ha tocat ser... *una vaca* 🐮. 
+welcome_vaca='''En aquest conte t'ha tocat ser... *una vaca* 🐮 
+
 Com ja sabràs, és un personatge de vital importància en aquest conte.
 
 La teva vida com a vaca és bastant complicada amb un monstre assassí rondant les muntanyes, i encara més des de que t’han escollit com a ofrena pel drac. 
@@ -185,7 +188,6 @@ vaca_1='''Molt bé! Has trobat al drac.
 
 *NYAC!* No has durat ni 3 segons, se’t ha empassat d’una sola peça.
 
-
 Em sap greu, la teva història s’acaba aquí. Però pots tornar a començar i fer un altre paper! Escriu *conte* per reencarnar-te en un altre personatge.
 
 '''
@@ -196,6 +198,7 @@ how_to='''*Com trobar un personatge per continuar la història?*
 1⃣ *Trobar* 🔎 a algú que participi en el conte i li hagi tocat el personatge que busques.
 
 2⃣ *Adjuntar* 📎 el contacte en aquest chat ⬇
+⚠️ Comprova que el contacte que envies és de Whatsapp!
 
 '''
 
