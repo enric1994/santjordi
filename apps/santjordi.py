@@ -61,6 +61,14 @@ def play(chat,message,test):
 
 
 
+    if not get_alt_state(state,level)=="none":
+        level_up(chat)
+        level_up(chat)
+        level_up(chat)
+        level_up(chat)
+        return get_alt_text(state)
+
+
     next_state=get_next_state(state,level)
 
 
@@ -123,6 +131,40 @@ def gen_state():
     else:
         return "vaca"
 
+def get_alt_state(state,level):
+    if state == "cavaller":
+        if level == 1:
+            return "vaca"
+        else:
+            return "none"
+
+    if state == "princesa":
+        if level == 0:
+            return "princep"
+        else:
+            return "none"
+    if state == "rei":
+        if level == 1:
+            return "drac"
+        else:
+            return "none"
+    if state == "pages":
+        if level == 0:
+            return "drac"
+        else:
+            return "none"
+    if state == "drac":
+        if level == 0:
+            return "pages"
+        else:
+            return "none"
+    if state == "vaca":
+        if level == 0:
+            return "pages"
+        else:
+            return "none"
+    return "none"
+
 def get_next_state(state,level):
     if state == "cavaller":
         if level == 0:
@@ -178,6 +220,19 @@ def get_next_state(state,level):
         elif level == 1:
             return "end"
 
+def get_alt_text(state):
+    if state == "cavaller":
+        return texts.alt_cavaller
+    if state == "princesa":
+        return texts.alt_princesa
+    if state == "rei":
+        return texts.alt_rei
+    if state == "pages":
+        return texts.alt_pages
+    if state == "drac":
+        return texts.alt_drac
+    if state == "vaca":
+        return texts.alt_vaca                       
 def get_text(chat,state,level,has_been):
     if state == "cavaller":
         if level == 0:

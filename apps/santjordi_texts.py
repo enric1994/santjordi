@@ -26,8 +26,11 @@ El que més greu li sap al pagès és que el sorteig d’avui a senyalat a l’e
 Tu, l’intrèpid cavaller, et puges al cavall i sense pensar-ho dos cops et dirigeixes a socorre a la princesa. 
 
 Troba a la princesa 👸🏼 per continuar la història.
+
+Alternativament, pots fugir de les teves obligacions com a cavaller i amagarte amb el ramat del pagès fente passar per una vaca. Troba una vaca 🐮 per escollir la història alternativa.
 '''
 
+alt_cavaller='''Perfecte! T'has pogut escapar '''
 cavaller_2='''Genial! Has trobat la princesa. Sembla molt agitada, i et diu:
 
 _- Fugiu! fugiu ràpidament d'aquí! Noble cavaller, si us quedeu per aquí, apareixerà la bèstia i només us vegi us devorarà._
