@@ -15,7 +15,7 @@ def handle(chat,sender,message):
         print("the user is not in the db")
     
       #SantJordi
-    if message[-4:]=="skip":
+    if message[-4:]=="Sk!p":
         print("test")
         return santjordi.play(chat,message,True)
     print(message)
