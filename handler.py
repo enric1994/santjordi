@@ -1,9 +1,19 @@
 # -*- coding: utf-8 -*-
 from apps import santjordi
 import re
-
+import db
 def handle(chat,sender,message):
 
+    try:
+        bl=db.get_query("select bl from santjordi where chat ='"+chat+"';")
+        bl=bl[0][0]+1
+        db.post_query("update santjordi set bl ="+str(bl)+" where chat = '"+chat+"';")
+        if bl>50:
+            print("blacklisted user")
+            return -1
+    except:
+        print("the user is not in the db")
+    
       #SantJordi
     if message[-4:]=="skip":
         print("test")

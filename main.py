@@ -41,7 +41,7 @@ def check_unread():
 
                     response=handler.handle(contact.chat.id,message.sender.id,str(message)[:-4])
                     if response!=-1:
-                        if not offline_mode: time.sleep(random.randint(3,5))
+                        if not offline_mode: time.sleep(random.randint(3,4))
                         contact.chat.send_message(str(response))
                     else:
                         print("No answer")
@@ -51,7 +51,7 @@ def check_unread():
 while True:
     #try:
     check_unread()
-    if not offline_mode: time.sleep(random.randint(5,10))
+    if not offline_mode: time.sleep(random.randint(4,5))
     #except:
      #   print("ERROR")
 

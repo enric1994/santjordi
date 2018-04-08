@@ -5,20 +5,26 @@ import random
 from apps import santjordi_texts as texts
 
 def welcome(chat):
-    print("welcome")
     #check that is a direct message
     if len(chat)>20:
         return -1
 
     state=check_state(chat)
     level=check_level(chat)
+    has_been = get_has_been(chat)
+
+    all_completed=True
+    for x in range(0,5):
+        if has_been[x]==0:
+            all_completed=False
+    if all_completed==True: 
+        return -1
 
     if get_next_state(state,level) == "end" or level >3 or (level>1 and state=="vaca") or (level>2 and state=="princesa"):
         #check character repeat
         retry=True
         while retry:
             new_state=gen_state()
-            has_been = get_has_been(chat)
 
             if new_state=="cavaller" and has_been[0]==0:
                 retry=False
@@ -39,7 +45,7 @@ def welcome(chat):
         return string
 
     elif not state == -1:
-        return "Ja tens la història començada"
+        return "Ja tens la història començada 😅"
     else:
         new_state=gen_state()
         new_player(chat,new_state)
@@ -78,7 +84,7 @@ def play(chat,message,test):
         level_up(chat)
         return next_text
     else:
-        return "aquest personatge no és el que estas buscant"
+        return "Aquest personatge no és el que estas buscant! Busca un altre 😅"
 
     return -1
 
@@ -322,6 +328,19 @@ def end_game_text(chat,state,has_beenn):
     Increïble! Has completat el conte amb un dels personatges.
     '''+ gen_emojis(has_been) + '''
     Per viure el conte des d’un altre punt de vista, torna a escriure: *conte*'''
+
+    all_completed=True
+    for x in range(0,5):
+        if has_been[x]==0:
+            all_completed=False
+    if all_completed==True: 
+        return '''
+Increïble! Has completat el conte amb tots els personatges!
+'''+gen_emojis(has_been)+'''
+Espero que t’ho hagis passat tant bé com jo escrivint aquesta història.
+
+Feliç Sant Jordi 🌹 '''
+
     return string
 def gen_emojis(has_been):
     string=" "
