@@ -3,6 +3,7 @@
 import db, re
 import random
 from apps import santjordi_texts as texts
+#<VCardMessage - vcard from Khalid Upc at 2018-04-08 23:26:48 (b'BEGIN:VCARD\nVERSION:3.0\nN:;Enric(20)upc;;;\nFN:Enric(20)upc\nitem1.TEL;waid=34669214506:+34 669 21 45 06\nitem1.X-ABLabel:Mvil\nEND:VCARD')>
 
 def welcome(chat):
     #check that is a direct message
@@ -196,7 +197,7 @@ def get_next_state(state,level):
         if level == 0:
             return "rei"
         elif level == 1:
-            return "cavaller"
+            return "drac"
         elif level == 2:
             return "end"
 
