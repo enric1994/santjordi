@@ -26,11 +26,19 @@ El que més greu li sap al pagès és que el sorteig d’avui a senyalat a l’e
 Tu, l’intrèpid cavaller, et puges al cavall i sense pensar-ho dos cops et dirigeixes a socorre a la princesa. 
 
 Troba a la princesa 👸🏼 per continuar la història.
-
-Alternativament, pots fugir de les teves obligacions com a cavaller i amagarte amb el ramat del pagès fente passar per una vaca. Troba una vaca 🐮 per escollir la història alternativa.
 '''
 
-alt_cavaller='''Perfecte! T'has pogut escapar '''
+alt_cavaller='''Ups! Has en comptes d’anar a buscar a la princesa has triat el camí del covard: amagar-te entre el ramat de vaques del pagès.
+Ja portes 13 dies fent-te passar per una vaca, comences a empatitzar amb les teves companyes i fins i tot parles amb elles: *MMUUU*.
+
+Fins que *PAM!* Apareix el drac i se t’empassa d’una sola peça. 
+
+La teva armadura causa la mort del drac per ennuegament. 
+
+Has salvat a tot el regne.
+
+Desgraciadament, aquest no és el conte de Sant Jordi, escriu *conte* per tornar a començar la història. '''
+
 cavaller_2='''Genial! Has trobat la princesa. Sembla molt agitada, i et diu:
 
 _- Fugiu! fugiu ràpidament d'aquí! Noble cavaller, si us quedeu per aquí, apareixerà la bèstia i només us vegi us devorarà._
@@ -51,8 +59,21 @@ Però la lluita no dura gaire, ja que d’una estocada li claves la teva llança
 welcome_princesa='''En aquest conte t'ha tocat ser... *la  princesa* 👸🏼! 
 Tens el cor robat a tots els ciutadans, per la teva gran bellesa i elegància. Avui el rei t’ha convocat perquè t’ha de donar una notícia.
 
-Troba a al rei 👑 per continuar la història.
+Troba a al rei 👑 per continuar la història. '''
+
+alt_princesa='''En comptes d’anar a buscar al rei t’has decantat per anar a veure a l’atractiu cavaller que ronda per la zona.
+
+Us enamoreu a primera vista i us escapeu.
+
+El drac mata tots els vostres éssers estimats.
+
+Formeu una família i viviu feliços per sempre.
+
+No, és broma. Et deixa.
+
+Desgraciadament, aquest no és el conte de Sant Jordi, escriu *conte* per tornar a començar la història. 
  '''
+
 
 princesa_1='''Molt bé! Has trobat al rei, el qual sembla bastant disgustat. 
 
@@ -96,6 +117,18 @@ Com que ets un rei just, acceptes la proposta i la anuncies a tot el regne: cada
 Troba la princesa  👸🏼 per continuar la història.
 
 '''
+alt_rei='''En comptes d’anar a buscar a la teva filla, has decidit que prefereixes lluitar amb el al drac. Una decisió molt heroica.
+
+El drac se’t menja d’una sola peça.
+
+El drac aniquila el teu regne.
+
+Ningú sap qui és Sant Jordi.
+
+La gent no penja fotos de roses a Instagram.
+
+Desgraciadament, aquest no és el conte de Sant Jordi, escriu *conte* per tornar a començar la història. 
+ '''
 
 rei_2='''No ha sigut gens fàcil explicar-li a la princesa, ha caigut més d’una llàgrima.
 
@@ -121,6 +154,18 @@ Per tal de saciar la gana del drac, estàs participant en una iniciativa que con
 
 Troba la vaca 🐮 per poder continuar la història.
 '''
+alt_pages='''En comptes d’entregar a la vaca, decideixes solucionar tu mateix l’assumpte del drac: li proposes un tractat de pau que accepta encantat.
+
+El drac es fa vegetarià.
+
+Us feu socis.
+
+Munteu una parada de roses.
+
+Les veneu a 7€ i us feu rics.
+
+Desgraciadament, aquest no és el conte de Sant Jordi, escriu *conte* per tornar a començar la història. 
+ '''
 
 pages_1='''Molt bé! Has trobat la vaca. Per tu no ha sigut gens fàcil entregar-la, però com a mínim el drac ja no molestarà durant uns dies.
 
@@ -154,7 +199,16 @@ El teu dia a dia és bastant relaxat, et passeges tranquil·lament per la muntan
 
 Troba una vaca 🐮 per poder continuar la història.
 '''
+alt_drac='''En comptes de trobar una vaca has trobat al pagès! D’un cop de bastó t’envia a l’altre barri.
 
+El regne queda alliberat de la terrible bèstia.
+
+La gent celebra el dia de Sant Paco el 22 d’abril
+
+Els nens es passegen pels carrers amb bastons.
+
+Desgraciadament, aquest no és el conte de Sant Jordi, escriu *conte* per tornar a començar la història. 
+ '''
 drac_1='''Molt bé! Has trobat una vaca 🐮 ,deliciosa per cert.
 
 Ara, com cada dia et dirigeixes a davant del palau, a buscar la ofrena diària, que tocarà avui?
@@ -186,14 +240,23 @@ La teva vida com a vaca és bastant complicada amb un monstre assassí rondant l
 
 Troba al drac 🐲 per continuar la història.
 '''
+alt_vaca='''En l’últim instant t’escapes i tornes amb el pagès. 
 
+Us escapeu al desert.
+
+El drac s’enfada perquè no ha rebut la seva ofrena diària i aniquila tot el regne.
+
+T’adones que al desert no hi ha herba.
+
+Mors.
+
+Desgraciadament, aquest no és el conte de Sant Jordi, escriu *conte* per tornar a començar la història. 
+ '''
 vaca_1='''Molt bé! Has trobat al drac. 
 
 *NYAC!* No has durat ni 3 segons, se’t ha empassat d’una sola peça.
 
-Em sap greu, la teva història s’acaba aquí. Però pots tornar a començar i fer un altre paper! Escriu *conte* per reencarnar-te en un altre personatge.
-
-'''
+Em sap greu, la teva història s’acaba aquí. Però pots tornar a començar i fer un altre paper! Escriu *conte* per reencarnar-te en un altre personatge.'''
 
 
 how_to='''*Com trobar un personatge per continuar la història?*
@@ -223,3 +286,5 @@ Espero que t’ho hagis passat tant bé com jo escrivint aquesta història.
 
 Feliç Sant Jordi
 '''
+
+
