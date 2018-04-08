@@ -2,7 +2,7 @@ welcome='''Hola! Estàs preparat per començar *el conte interactiu de Sant Jord
 
 En aquest joc viuràs la història des del punt de vista d'un un dels personatges.
 
-Per cert… No et preocupis per mi, jo només sóc un robot 🤖, que t’anirà narrant la història:
+Per cert… No et preocupis per mi, jo només sóc un robot 🤖 que t’anirà narrant la història:
 
 _*Fa molt i molt de temps* el poble de Montblanc era devastat per un monstre ferotge i terrible, que podia caminar, volar i nedar, i tenia un alè tant pudent, que des de molt lluny amb les seves alenades enverinava l'aire i produïa la mort a tots els qui el respiraven._
 

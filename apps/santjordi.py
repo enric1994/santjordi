@@ -21,10 +21,11 @@ def welcome(chat):
     for x in range(0,5):
         if has_been[x]==1:
             completed_count=completed_count+1
-    if completed_count==6:
+            print(completed_count)
+    if completed_count>=5:
         return -1
 
-    if (get_next_state(state,level) == "end" or level >3 or (level>1 and state=="vaca") or (level>2 and state=="princesa")) and not completed_count==6:
+    if (get_next_state(state,level) == "end" or level >3 or (level>1 and state=="vaca") or (level>2 and state=="princesa")) and not completed_count>=5:
         #check character repeat
         retry=True
         while retry:
