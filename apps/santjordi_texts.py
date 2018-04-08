@@ -112,12 +112,14 @@ rei_1=''' Molt bé! Has trobat al pagès. Sembla que no li fa massa il·lusió t
 És per això que et comunica una proposta dels ramaders de la zona: sacrificar cada dia una persona, ja que per tots és sabut que el que més sacia al drac són les persones. Així el drac deixaria de fer malifetes per aquelles terres.
 
 
-Com que ets un rei just, acceptes la proposta i la anuncies a tot el regne: cada dia es sortejarà qui serà entregat al drac. El que no t’esperaves és que al cap de poc sortiria la princesa escollida, però com ets un governant sever no fas cap excepció.
+Com que ets un rei just, acceptes la proposta i la anuncies a tot el regne: cada dia es sortejarà qui serà entregat al drac. 
+
+El que no t’esperaves és que al cap de poc sortiria la princesa escollida, però com ets un governant sever no fas cap excepció.
 
 Troba la princesa  👸🏼 per continuar la història.
 
 '''
-alt_rei='''En comptes d’anar a buscar a la teva filla, has decidit que prefereixes lluitar amb el al drac. Una decisió molt heroica.
+alt_rei='''En comptes d’entregar la teva filla, has decidit que prefereixes lluitar amb el al drac. Una decisió molt heroica.
 
 El drac se’t menja d’una sola peça.
 

@@ -22,14 +22,12 @@ def welcome(chat):
         if has_been[x]==1:
             completed_count=completed_count+1
     if completed_count==6:
-        print("all_completed")
         return -1
 
     if (get_next_state(state,level) == "end" or level >3 or (level>1 and state=="vaca") or (level>2 and state=="princesa")) and not completed_count==6:
         #check character repeat
         retry=True
         while retry:
-            print(all_completed)
             new_state=gen_state()
 
             if new_state=="cavaller" and has_been[0]==0:
@@ -74,12 +72,12 @@ def play(chat,message,test):
     f_state=check_state(f_chat)
 
 
-
-    if not get_alt_state(state,level)=="none":
+    if get_alt_state(state,level)==f_state:
         level_up(chat)
         level_up(chat)
         level_up(chat)
         level_up(chat)
+    
         return get_alt_text(state)
 
 
@@ -157,7 +155,7 @@ def get_alt_state(state,level):
 
     if state == "princesa":
         if level == 0:
-            return "princep"
+            return "cavaller"
         else:
             return "none"
     if state == "rei":
