@@ -8,7 +8,7 @@ def handle(chat,sender,message):
         bl=db.get_query("select bl from santjordi where chat ='"+chat+"';")
         bl=bl[0][0]+1
         db.post_query("update santjordi set bl ="+str(bl)+" where chat = '"+chat+"';")
-        if bl>50:
+        if bl>70:
             print("blacklisted user")
             return -1
     except:

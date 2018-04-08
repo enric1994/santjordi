@@ -11,19 +11,25 @@ def welcome(chat):
 
     state=check_state(chat)
     level=check_level(chat)
-    has_been = get_has_been(chat)
+    
+    try:
+        has_been = get_has_been(chat)
+    except:
+        print("user not found in db")
 
-    all_completed=True
+    completed_count=0
     for x in range(0,5):
-        if has_been[x]==0:
-            all_completed=False
-    if all_completed==True: 
+        if has_been[x]==1:
+            completed_count=completed_count+1
+    if completed_count==6:
+        print("all_completed")
         return -1
 
-    if get_next_state(state,level) == "end" or level >3 or (level>1 and state=="vaca") or (level>2 and state=="princesa"):
+    if (get_next_state(state,level) == "end" or level >3 or (level>1 and state=="vaca") or (level>2 and state=="princesa")) and not completed_count==6:
         #check character repeat
         retry=True
         while retry:
+            print(all_completed)
             new_state=gen_state()
 
             if new_state=="cavaller" and has_been[0]==0:
@@ -44,12 +50,14 @@ def welcome(chat):
         string= get_text(chat,new_state,0,[0,0,0,0,0,0])
         return string
 
+
     elif not state == -1:
         return "Ja tens la història començada 😅"
     else:
         new_state=gen_state()
         new_player(chat,new_state)
-        string= texts.welcome + get_text(chat,new_state,0,[0,0,0,0,0,0]) + texts.how_to
+        string= texts.welcome + get_text(chat,new_state,0,[0,0,0,0,0,0]) + '''
+'''+texts.how_to
         return string
 
 def play(chat,message,test):
@@ -97,8 +105,11 @@ def level_up(chat):
 
 
 def get_has_been(chat):
-    has_been=db.get_query("select has_been_cavaller, has_been_princesa, has_been_rei, has_been_drac, has_been_pages, has_been_vaca from santjordi where chat ='"+chat+"';")
-    return has_been[0]
+    try:
+        has_been=db.get_query("select has_been_cavaller, has_been_princesa, has_been_rei, has_been_drac, has_been_pages, has_been_vaca from santjordi where chat ='"+chat+"';")
+        return has_been[0]
+    except:
+        return "error"
 
 def check_state(chat):
     db_state=db.get_query("select state from santjordi where chat='" + chat + "';")

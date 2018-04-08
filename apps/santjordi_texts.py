@@ -256,14 +256,15 @@ vaca_1='''Molt bé! Has trobat al drac.
 
 *NYAC!* No has durat ni 3 segons, se’t ha empassat d’una sola peça.
 
-Em sap greu, la teva història s’acaba aquí. Però pots tornar a començar i fer un altre paper! Escriu *conte* per reencarnar-te en un altre personatge.'''
+Em sap greu, la teva història s’acaba aquí. Però pots tornar a començar i reencarnar-te en un altre personatge!'''
 
 
 how_to='''*Com trobar un personatge per continuar la història?*
 
-1⃣ *Trobar* 🔎 a algú que participi en el conte i li hagi tocat el personatge que busques.
+1⃣ *Troba* 🔎 a algú que participi en el conte i li hagi tocat el personatge que busques.
 
-2⃣ *Adjuntar* 📎 el contacte en aquest chat ⬇
+2⃣ *Adjunta* 📎 el contacte en aquest chat ⬇
+
 ⚠️ Comprova que el contacte que envies és de Whatsapp!
 
 '''
