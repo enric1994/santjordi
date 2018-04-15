@@ -49,10 +49,12 @@ def check_unread():
 
 #Main loop
 while True:
-    #try:
-    check_unread()
-    if not offline_mode: time.sleep(random.randint(4,5))
-    #except:
-     #   print("ERROR")
+    try:
+        check_unread()
+        if not offline_mode: time.sleep(random.randint(4,5))
+    except:
+        print("ERROR")
+        time.sleep(2)
+
 
  

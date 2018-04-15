@@ -28,7 +28,9 @@ Tu, l’intrèpid cavaller, et puges al cavall i sense pensar-ho dos cops et dir
 Troba a la princesa 👸🏼 per continuar la història.
 '''
 
-alt_cavaller='''Ups! Has en comptes d’anar a buscar a la princesa has triat el camí del covard: amagar-te entre el ramat de vaques del pagès.
+alt_cavaller='''Ups! El contacte que has introduit és el del pagès i no el de la princesa!
+
+Final alternatiu: En comptes d’anar a rescatar a la princesa has anat a buscar al pagès, has escollit el camí del covard: amagar-te entre el seu ramat de vaques.
 Ja portes 13 dies fent-te passar per una vaca, comences a empatitzar amb les teves companyes i fins i tot parles amb elles: *MMUUU*.
 
 Fins que *PAM!* Apareix el drac i se t’empassa d’una sola peça. 
@@ -61,7 +63,10 @@ Tens el cor robat a tots els ciutadans, per la teva gran bellesa i elegància. A
 
 Troba a al rei 👑 per continuar la història. '''
 
-alt_princesa='''En comptes d’anar a buscar al rei t’has decantat per anar a veure a l’atractiu cavaller que ronda per la zona.
+alt_princesa='''Ups! El contacte que has introduit és el del cavaller i no el del rei!
+
+
+Final alternatiu: En comptes d’anar a buscar al rei t’has decantat per anar a veure a l’atractiu cavaller que ronda per la zona.
 
 Us enamoreu a primera vista i us escapeu.
 
@@ -119,11 +124,14 @@ El que no t’esperaves és que al cap de poc sortiria la princesa escollida, pe
 Troba la princesa  👸🏼 per continuar la història.
 
 '''
-alt_rei='''En comptes d’entregar la teva filla, has decidit que prefereixes lluitar amb el al drac. Una decisió molt heroica.
+alt_rei='''Ups! El contacte que has introduit és el del drac i no el de la princesa!
 
-El drac se’t menja d’una sola peça.
 
-El drac aniquila el teu regne.
+Final alternatiu: En comptes d’entregar a la princecsa, has decidit que prefereixes lluitar amb el al drac. Una decisió admirable.
+
+Lamentablement se’t menja d’una sola peça abans de que pugis treure l'espasa.
+
+El drac aniquila el teu regne, no apareix cap cavaller.
 
 Ningú sap qui és Sant Jordi.
 
@@ -156,7 +164,10 @@ Per tal de saciar la gana del drac, estàs participant en una iniciativa que con
 
 Troba la vaca 🐮 per poder continuar la història.
 '''
-alt_pages='''En comptes d’entregar a la vaca, decideixes solucionar tu mateix l’assumpte del drac: li proposes un tractat de pau que accepta encantat.
+alt_pages='''Ups! El contacte que has introduit és el del drac i no el de la vaca!
+
+
+Final alternatiu: En comptes d’entregar a la vaca, decideixes solucionar tu mateix l’assumpte del drac: li proposes un tractat de pau que accepta encantat.
 
 El drac es fa vegetarià.
 
@@ -201,7 +212,10 @@ El teu dia a dia és bastant relaxat, et passeges tranquil·lament per la muntan
 
 Troba una vaca 🐮 per poder continuar la història.
 '''
-alt_drac='''En comptes de trobar una vaca has trobat al pagès! D’un cop de bastó t’envia a l’altre barri.
+alt_drac='''Ups! El contacte que has introduit és el del pagès i no el de la vaca!
+
+
+Final alternatiu: En comptes de trobar una vaca t'has creuat al pagès! D’un cop de bastó t’envia a l’altre barri.
 
 El regne queda alliberat de la terrible bèstia.
 
@@ -242,7 +256,10 @@ La teva vida com a vaca és bastant complicada amb un monstre assassí rondant l
 
 Troba al drac 🐲 per continuar la història.
 '''
-alt_vaca='''En l’últim instant t’escapes i tornes amb el pagès. 
+alt_vaca='''Ups! El contacte que has introduit és el del pagès i no el del drac!
+
+
+Final alternatiu: En l’últim instant t’escapes del drac i tornes amb el pagès. 
 
 Us escapeu al desert.
 
