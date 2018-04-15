@@ -61,6 +61,9 @@ def welcome(chat):
         return string
 
 def play(chat,message,test):
+	#check that is a direct message
+    if len(chat)>20:
+        return -1
     state=check_state(chat)
     level=check_level(chat)
     if test:
