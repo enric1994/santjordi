@@ -49,7 +49,9 @@ I developed the Whatsapp bot using the following elements:
 
 ## Issues during the event
 I noticed several **scalability** problems when handling requests from more than 10k users.
-The first hours the new users income where 2/hour (basically my family and friends), then it started growing exponentially until **1000 new users per hour**. At this point the system collapsed and the response time raised to 5 minutes in some cases, that delay stopped the exponentially growing curve :(
+The first hours the new users income where 2/hour (basically my family and friends), then it started growing exponentially until **1000 new users per hour**. 
+
+At this point the system collapsed and the response time raised to 5 minutes in some cases, that delay stopped the exponentially growing curve :(
 
 ## Acknowledgements
 I would like to thank my family and friends who trust in my idea an forward the Whatsapp bot contact.
