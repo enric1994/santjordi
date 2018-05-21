@@ -16,9 +16,3 @@ services:
       - MYSQL_USER=user
       - MYSQL_PASSWORD=pass
 
-#docker exec -it wabot_db_1 mysql -u user -p
-#use wadb;
-
-#ALTER TABLE japo CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_bin
-#ALTER TABLE japo CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-#docker run -d -v /home/myubuntu/wabot/db:/var/lib/mysql -p 3306:3306 -e MYSQL_PASSWORD=pass -e MYSQL_ROOT_PASSWORD=rootpass -e MYSQL_DATABASE=wadb -e MYSQL_USER=user mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci

@@ -25,7 +25,7 @@ def handle(chat,sender,message):
         p_message=search.group(1)
         print(p_message)
 
-        if p_message=="conte" or p_message=="Conte" :#and chat == "34669214506@c.us":
+        if p_message=="conte" or p_message=="Conte" :
             return santjordi.welcome(chat)
 
     except:
@@ -33,6 +33,3 @@ def handle(chat,sender,message):
         return santjordi.play(chat,message,False)
     else:
         return -1
-#34669214506-1520096942@g.us
-#34669214506@c.us
-#u[0].messages[0].sender
