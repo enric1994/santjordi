@@ -54,4 +54,4 @@ The first hours the new users income where 2/hour (basically my family and frien
 At this point the system collapsed and the response time raised to 5 minutes in some cases, that delay stopped the exponentially growing curve :(
 
 ## Acknowledgements
-I would like to thank my family and friends who trust in my idea an forward the Whatsapp bot contact.
+I would like to thank my family and friends who trusted in my idea and forward the Whatsapp bot contact.
