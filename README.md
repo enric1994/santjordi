@@ -1,6 +1,8 @@
 # Saint George's interactive story:
 ## The Whatsapp bot that become viral on 23 April (27.325 users)
 
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fenric1994%2Fsantjordi)
+
 <p align="center">
  <img src="https://github.com/enric1994/santjordi/blob/master/images/SJB1-01.png" width="500">
 </p>
