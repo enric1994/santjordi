@@ -4,7 +4,7 @@
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fenric1994%2Fsantjordi)
 
 <p align="center">
- <img src="https://github.com/enric1994/santjordi/blob/master/images/SJB1-01.png" width="500">
+ <img src="images/SJB1-01.png" width="500">
 </p>
 
 In Catalonia (Spain), Saint Gerorge's day is one of the most original celebrations, book and flower stalls are set up along the streets of Barcelona 🌹📚
@@ -16,7 +16,7 @@ Let's see an example:
 (Note that all the texts are in Catalan)
 
 <p align="center">
- <img src="https://github.com/enric1994/santjordi/blob/master/images/sj1.jpg" width="300">
+ <img src="images/sj1.jpg" width="300">
 </p>
 
 As you can see, to start the history you must start a conversation with the bot and text the keyword: **conte**.
@@ -24,13 +24,13 @@ As you can see, to start the history you must start a conversation with the bot 
 Then, the bot explain the introduction of the story and assigns you a character (in this case the princess 👸🏼). To continue, the user need to find another participant with the king 👑 character and attach the contact:
 
 <p align="center">
- <img src="https://github.com/enric1994/santjordi/blob/master/images/sj2.jpg" width="300">
+ <img src="images/sj2.jpg" width="300">
 </p>
 
 Finally, to end the story, the princess must find the dragon 🐲
 
 <p align="center">
- <img src="https://github.com/enric1994/santjordi/blob/master/images/sj3.jpg" width="300">
+ <img src="images/sj3.jpg" width="300">
 </p>
 
 ## Results
